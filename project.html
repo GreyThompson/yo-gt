@@ -8,6 +8,9 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
 
+  <!-- Additional Styles -->
+  <link href="css/gt-styles.css" rel="stylesheet"> <!-- for responsive video embed -->
+
   <title>WSC - Project Template</title>
 </head>
 <body>
@@ -15,10 +18,10 @@
   <!-- Project Header & Video Jumbotron Start -->
   <section class="container">
       <h1 class="text-center">THIS IS A PROJECTS TEMPLATE</h1>
-      <div class="jumbotron">
+      <div class="jumbotron project-jumbo">
         <div class="container">
           <div class="row">
-            <p class="text-center"><a data-toggle="modal" data-target="#videoModal" class="modal-play-btn"><span class="glyphicon glyphicon-play-circle" style="font-size: 106px"></span></a></p>
+            <p class="play-btn-box text-center"><a data-toggle="modal" data-target="#videoModal" class="modal-play-btn"><span class="glyphicon glyphicon-play-circle" style="font-size: 106px"></span></a></p>
             </div>
           </div>
         </div>
@@ -30,7 +33,7 @@
     <p class="text-justify">Butcher consequat occupy polaroid Neutra, distillery gluten-free locavore Wes Anderson tattooed dolor roof party. Tote bag vegan sapiente, kitsch tattooed flannel bespoke odio eu ea. Bitters forage 8-bit aliqua ea freegan. Etsy assumenda cred vegan DIY dreamcatcher. Lomo minim paleo, consequat adipisicing keffiyeh Pitchfork pork belly fashion axe Thundercats tousled sunt High Life letterpress. Portland YOLO viral, dolore accusamus Carles assumenda dolor seitan pop-up polaroid Schlitz semiotics. 8-bit accusamus whatever Helvetica XOXO, sartorial cupidatat biodiesel master cleanse enim velit mumblecore.</p>
   </section>
 
-  <!-- Modal -->
+  <!-- Modal Start -->
   <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -39,15 +42,14 @@
           <h4 class="modal-title" id="myModalLabel">Project Video</h4>
         </div>
         <div class="modal-body">
-          <iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="video-container">
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/YtnC7vQMdOg" frameborder="0" allowfullscreen autoplay></iframe>
+          </div>
         </div>
       </div>
     </div>
   </div>
-    
+  <!-- Modals End -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

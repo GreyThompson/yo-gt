@@ -1,0 +1,4 @@
+.carousel-inner .item img, .carousel-inner .item.active img {
+	max-height: 900px;	
+}
+

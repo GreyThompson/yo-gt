@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Additional Styles -->
+  <link href="css/gt-styles.css" rel="stylesheet"> <!-- for responsive video embed -->
+
+  <title>Volunteer | World Spine Care</title>
+</head>
+<body>
+
+  <!-- Project Header & Video Jumbotron Start -->
+  <section class="container">
+      <h1 class="text-center">THIS IS A VOLUNTEER PAGE</h1>
+      <div class="jumbotron volunteer-jumbo">
+        <div class="container">
+          <div class="row">
+            <p class="play-btn-box text-center"><a data-toggle="modal" data-target="#videoModal" class="modal-play-btn"><span class="glyphicon glyphicon-play-circle" style="font-size: 106px"></span></a></p>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- Project Header & Video Jumbotron End -->
+
+  <!-- Random Text Blob Start -->
+  <section class="container">
+    <p class="text-justify">Butcher consequat occupy polaroid Neutra, distillery gluten-free locavore Wes Anderson tattooed dolor roof party. Tote bag vegan sapiente, kitsch tattooed flannel bespoke odio eu ea. Bitters forage 8-bit aliqua ea freegan. Etsy assumenda cred vegan DIY dreamcatcher. Lomo minim paleo, consequat adipisicing keffiyeh Pitchfork pork belly fashion axe Thundercats tousled sunt High Life letterpress. Portland YOLO viral, dolore accusamus Carles assumenda dolor seitan pop-up polaroid Schlitz semiotics. 8-bit accusamus whatever Helvetica XOXO, sartorial cupidatat biodiesel master cleanse enim velit mumblecore.</p>
+
+    <button data-toggle="modal" data-target="#volunteerModal" data-dismiss="modal" class="btn btn-success btn-lg btn-block">I want to help!</button>
+  </section>
+
+  <!-- Modals Start -->
+    <!-- Video Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Project Video</h4>
+        </div>
+        <div class="modal-body">
+          <div class="video-container">
+            <iframe width="560" height="315" src="http://www.youtube.com/embed/sY9b8hzPTd4" frameborder="0" allowfullscreen></iframe>
+          </div><br><br>
+          <button data-toggle="modal" data-target="#volunteerModal" data-dismiss="modal" class="btn btn-success btn-lg btn-block">I want to help!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Volunteer Sign Up Modal -->
+  <div class="modal fade" id="volunteerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">You Can Help Change Lives with World Spine Care</h4>
+        </div>
+        <div class="modal-body">
+          <div id="wufoo-z1xkh11t0l0l7cd">
+            Fill out my <a href="https://gthomp.wufoo.com/forms/z1xkh11t0l0l7cd">online form</a>.
+          </div>
+          <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
+          <script type="text/javascript">var z1xkh11t0l0l7cd;(function(d, t) {
+            var s = d.createElement(t), options = {
+            'userName':'gthomp',
+            'formHash':'z1xkh11t0l0l7cd',
+            'autoResize':true,
+            'height':'400',
+            'async':true,
+            'host':'wufoo.com',
+            'header':'hide',
+            'ssl':true};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { z1xkh11t0l0l7cd = new WufooForm();z1xkh11t0l0l7cd.initialize(options);z1xkh11t0l0l7cd.display(); } catch (e) {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modals End -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

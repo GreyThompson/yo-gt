@@ -1,0 +1,28 @@
+.donate-action, .volunteer-action, .subscribe-action {
+	text-align: center;
+}
+
+.btn-lg {
+	margin: 40px 0;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+footer {
+	background:#eee;
+}
+
+
+.site-map li {
+	display: block;
+}
+
+.brainstation {
+	margin:20px 0;
+}
+
+.lead, .map-list {
+	margin: 40px 0;
+}

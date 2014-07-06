@@ -13,17 +13,9 @@
 }
 
 .jumbotron {
+  background-image: url(../img/volunteer-shoshong.jpg);
   background-size: cover;
   height: 400px;
-}
-
-.project-jumbo {
-  background-image: url(../images/first-team.jpg);
-}
-
-.volunteer-jumbo {
-  background-image: url(../images/volunteer-shoshong.jpg);
-
 }
 
 .play-btn-box {

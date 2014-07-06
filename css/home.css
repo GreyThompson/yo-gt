@@ -1,4 +1,15 @@
-.donate-action, .volunteer-action, .subscribe-action {
+.carousel-inner {
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  top: 0px;
+}
+
+.donate-action,
+.volunteer-action,
+.subscribe-action {
 	text-align: center;
 }
 
@@ -10,19 +21,52 @@
 	margin-bottom: 0;
 }
 
-footer {
-	background:#eee;
+.icon-copy {
+  font-size: 1.5em;
 }
 
+.partner-logo {
+
+}
+
+#sponsor-org-box {
+  border: solid #666;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+#prof-assoc-box {
+  border: solid #666;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+	background:#eee;
+  padding-bottom: 55px;
+}
 
 .site-map li {
 	display: block;
 }
 
-.brainstation {
-	margin:20px 0;
+.lead, .map-list {
+	margin-top: 40px;
 }
 
-.lead, .map-list {
-	margin: 40px 0;
+.footer-logo {
+  width: 100%;
 }
+
+.social-media-icon {
+  width: 85px;
+  height: 85px;
+  margin: 0, 3px;
+  overflow: hidden;
+  background-image: url(../images/social_media_sprite.png);
+
+}
+
+.social-media-icon.facebook { background-position: -588px -0px; }
+.social-media-icon.youtube { background-position: -83px -0px; }
+.social-media-icon.twitter { background-position: -420px -0px; }

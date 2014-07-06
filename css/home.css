@@ -1,3 +1,19 @@
+.navbar {
+  /*background-color: #0d3049;*/
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 85px;
+    height: 85px;
+    padding-top: 0;
+}
+
+.navbar-logo{
+  margin: 0, 10px;
+  height: 100%;
+}
+
 .carousel-inner {
   max-height: 600px;
   overflow: hidden;

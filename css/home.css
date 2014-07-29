@@ -15,12 +15,17 @@
 }
 
 .carousel-inner {
-  max-height: 600px;
+  max-height: 450px;
   overflow: hidden;
 }
 
 .carousel-caption {
   top: 0px;
+}
+
+.carousel-inner .item img {
+  position: relative;
+  top: -45x;
 }
 
 .donate-action,
@@ -71,7 +76,7 @@ footer {
 }
 
 .footer-logo {
-  width: 100%;
+  width: 55%;
 }
 
 .social-media-icon {

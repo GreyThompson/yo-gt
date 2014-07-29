@@ -1,3 +1,15 @@
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 85px;
+    height: 85px;
+    padding-top: 0;
+}
+
+.navbar-logo{
+  margin: 0, 10px;
+  height: 100%;
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -18,11 +30,11 @@
 }
 
 .project-jumbo {
-  background-image: url(../img/first-team.jpg);
+  background-image: url(../images/first-team.jpg);
 }
 
 .volunteer-jumbo {
-  background-image: url(../img/volunteer-shoshong.jpg);
+  background-image: url(../images/volunteer-shoshong.jpg);
 
 }
 
@@ -33,3 +45,33 @@
 .modal-play-btn {
   color: white;
 }
+
+footer {
+  background:#eee;
+  padding-bottom: 55px;
+}
+
+.site-map li {
+  display: block;
+}
+
+.lead, .map-list {
+  margin-top: 40px;
+}
+
+.footer-logo {
+  width: 100%;
+}
+
+.social-media-icon {
+  width: 85px;
+  height: 85px;
+  margin: 0, 3px;
+  overflow: hidden;
+  background-image: url(../images/social_media_sprite.png);
+
+}
+
+.social-media-icon.facebook { background-position: -588px -0px; }
+.social-media-icon.youtube { background-position: -83px -0px; }
+.social-media-icon.twitter { background-position: -420px -0px; }

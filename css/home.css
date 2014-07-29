@@ -1,3 +1,7 @@
+body {
+  color: white;
+}
+
 .navbar {
   /*background-color: #0d3049;*/
 }
@@ -28,6 +32,10 @@
   top: -45x;
 }
 
+#take-action {
+  background-color: #78b7e2;
+}
+
 .donate-action,
 .volunteer-action,
 .subscribe-action {
@@ -44,6 +52,21 @@
 
 .icon-copy {
   font-size: 1.5em;
+}
+
+#our-projects {
+  background-color: #1a6395;
+  padding: 0 0 20px 0px;
+}
+
+#about-us {
+  background-color: #2385c8;
+  padding: 0 0 20px 0px;
+}
+
+#our-partners {
+  background-color: #0d3049;
+  padding: 0 0 20px 0px;
 }
 
 .partner-logo {
@@ -65,6 +88,7 @@
 footer {
 	background:#eee;
   padding-bottom: 55px;
+  color: black;
 }
 
 .site-map li {

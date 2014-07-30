@@ -65,7 +65,6 @@ body {
 }
 
 #our-partners {
-  background-color: #0d3049;
   padding: 0 0 20px 0px;
 }
 
@@ -74,13 +73,15 @@ body {
 }
 
 #sponsor-org-box {
-  border: solid #666;
   padding-bottom: 30px;
   margin-bottom: 10px;
 }
 
+#sponsor-org-box, #prof-assoc-box h4 {
+  color:#2385c8;
+}
+
 #prof-assoc-box {
-  border: solid #666;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }

@@ -5,7 +5,7 @@
     padding-top: 0;
 }
 
-.navbar-logo{
+.navbar-logo {
   margin: 0, 10px;
   height: 100%;
 }
@@ -60,7 +60,7 @@ footer {
 }
 
 .footer-logo {
-  width: 100%;
+  width: 55%;
 }
 
 .social-media-icon {

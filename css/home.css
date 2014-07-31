@@ -1,9 +1,23 @@
+
 body {
   color: white;
 }
 
-.navbar {
-  /*background-color: #0d3049;*/
+h1 {
+  color: #333;
+}
+
+.project-description, .volunteer-description {
+  color: #333;
+}
+
+.heading {
+  color: #2385c8;
+}
+
+.navbar-default {
+  background: #fff;
+  border-bottom:1px solid #dddddd;
 }
 
 .navbar-brand,
@@ -31,6 +45,7 @@ body {
   position: relative;
   top: -45x;
 }
+
 
 #take-action {
   background-color: #78b7e2;
@@ -74,15 +89,16 @@ body {
 }
 
 #sponsor-org-box {
-  border: solid #666;
-  padding-bottom: 30px;
-  margin-bottom: 10px;
+  margin: 40px 0;
+}
+
+#sponsor-org-box h5, #prof-assoc-box h5 {
+  color:#2385c8;
+  margin-bottom:40px;
 }
 
 #prof-assoc-box {
-  border: solid #666;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
+  margin: 40px 0;
 }
 
 footer {

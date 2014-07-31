@@ -1,6 +1,6 @@
 
 body {
-  color: white;
+  color: black;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
 }
 
 .navbar-logo{
-  margin: 0, 10px;
+  margin: 0 10px;
   height: 100%;
 }
 
@@ -130,3 +130,67 @@ footer {
 .social-media-icon.facebook { background-position: -588px -0px; }
 .social-media-icon.youtube { background-position: -83px -0px; }
 .social-media-icon.twitter { background-position: -420px -0px; }
+
+/* START PROJECTS PAGE STYLES */
+
+.jumbotron {
+  background-size: cover;
+  height: 400px;
+}
+
+.project-jumbo {
+  background-image: url(../images/first-team.jpg);
+}
+
+.volunteer-jumbo {
+  background-image: url(../images/volunteer-shoshong.jpg);
+
+}
+
+.play-btn-box {
+  line-height: 400px;
+}
+
+.modal-play-btn {
+  color: white;
+}
+
+/* Responsive YouTube Embed Start */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+} /* Responsive YouTube Embed End */
+
+.dropdown li a {
+  line-height: 35px !important;
+  height: 35px !important;
+}
+
+#sub-nav {
+  min-height: 0px;
+}
+
+#sub-nav li a {
+  line-height: 35px;
+  height: 35px;
+  padding-top: 0;
+}
+
+.project-summary {
+  font-size: 1.25em;
+  padding-bottom: 10px;
+}
+
+.botswana-jumbo {
+  background-image: url(../images/project-pics/botswana/shoshong1.jpg);
+  background-position: 50% 75%
+}

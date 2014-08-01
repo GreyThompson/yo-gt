@@ -28,7 +28,7 @@ h1 {
 }
 
 .navbar-logo{
-  margin: 0, 10px;
+  margin: 0 10px;
   height: 100%;
 }
 
@@ -84,7 +84,7 @@ h1 {
 }
 
 .partner-logo {
-
+  height: 50px;
 }
 
 #sponsor-org-box {
@@ -111,7 +111,8 @@ footer {
 }
 
 .lead, .map-list {
-	margin-top: 40px;
+	margin: 40px 0;
+
 }
 
 .footer-logo {
@@ -127,6 +128,60 @@ footer {
 
 }
 
-.social-media-icon.facebook { background-position: -588px -0px; }
-.social-media-icon.youtube { background-position: -83px -0px; }
-.social-media-icon.twitter { background-position: -420px -0px; }
+/* Social Media Icons */
+
+.social {
+  text-align: center;
+}
+
+.fa-facebook, .fa-youtube, .fa-twitter {
+  font-size: 2.5em;
+  color: #fff;
+  display: inline-block;
+  margin:0 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+
+}
+
+
+.fa-facebook {
+  color: #3b5998;
+
+}
+
+.fa-youtube {
+  color: #cc181e;
+}
+
+.fa-twitter {
+  color:#55acee;
+}
+
+
+/* Resources */
+
+.heading.resources {
+  padding:10px 45px;
+}
+
+.resource-category {
+  margin:40px 0 20px 0;
+  text-align: center;
+}
+
+.model-of-care {
+  color: #000;
+  font-size: 1.2em;
+  padding:0 45px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+

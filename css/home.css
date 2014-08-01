@@ -3,6 +3,41 @@ body {
   color: black;
 }
 
+/*---------------*/
+/***** Fonts *****/
+/*---------------*/
+
+@font-face {
+font-family: Gotham-Book;
+src: url(Gotham-Book.ttf);
+src: local('Gotham-Book'), local('Gotham-Book'),
+url(../fonts/Gotham-Book.ttf) format('truetype');
+}
+@font-face {
+font-family: Gotham-Medium;
+src: url(Gotham-Medium.ttf);
+src: local('Gotham-Medium'), local('Gotham-Medium'),
+url(../fonts/Gotham-Medium.ttf) format('truetype');
+}
+@font-face {
+font-family: Gotham-Bold;
+src: url(Gotham-Bold.ttf);
+src: local('Gotham-Bold'), local('Gotham-Bold'),
+url(../fonts/Gotham-Bold.ttf) format('truetype');
+}
+
+h1, h2, {
+  font-family: 'Gotham-Bold';
+}
+h3, h4, h5, h6 {
+  font-family: 'Gotham-Medium';
+}
+p, li, a {
+  font-family: 'Gotham-Book';
+}
+
+
+
 h1 {
   color: #333;
 }
@@ -33,19 +68,20 @@ p {
   margin: 0 10px;
   height: 100%;
 }
+/*---------------*/
+/***  Carousel ***/
+/*---------------*/
 
-.carousel-inner {
+#owl-demo {
   max-height: 450px;
   overflow: hidden;
 }
 
-.carousel-caption {
-  top: 0px;
-}
-
-.carousel-inner .item img {
+#owl-demo .item img{
   position: relative;
-  top: -45x;
+  top: -45px;
+  display: block;
+  width: 100%;
 }
 
 
@@ -87,7 +123,7 @@ p {
 }
 
 .partner-logo {
-
+  height: 50px;
 }
 
 #sponsor-org-box {
@@ -114,7 +150,8 @@ footer {
 }
 
 .lead, .map-list {
-	margin-top: 40px;
+	margin: 40px 0;
+
 }
 
 .footer-logo {
@@ -136,7 +173,7 @@ footer {
 
 
 /*---------------*/
-/***** Descriptions *****/
+/**Descriptions***/
 /*---------------*/
 .grid {
   overflow: hidden;
@@ -337,3 +374,56 @@ figure.effect-sadie:hover p {
   background-image: url(../images/project-pics/botswana/shoshong1.jpg);
   background-position: 50% 75%;
 }
+
+/* Social Media Icons */
+
+.social {
+  text-align: center;
+}
+
+.fa-facebook, .fa-youtube, .fa-twitter {
+  font-size: 2.5em;
+  color: #fff;
+  display: inline-block;
+  margin:0 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+
+}
+
+
+.fa-facebook {
+  color: #3b5998;
+
+}
+
+.fa-youtube {
+  color: #cc181e;
+}
+
+.fa-twitter {
+  color:#55acee;
+}
+
+
+/* Resources */
+
+.heading.resources {
+  padding:10px 45px;
+}
+
+.resource-category {
+  margin:40px 0 20px 0;
+  text-align: center;
+}
+
+.model-of-care {
+  color: #000;
+  font-size: 1.2em;
+  padding:0 45px;
+  margin-bottom: 40px;
+}
+
+

@@ -3,6 +3,41 @@ body {
   color: black;
 }
 
+/*---------------*/
+/***** Fonts *****/
+/*---------------*/
+
+@font-face {
+font-family: Gotham-Book;
+src: url(Gotham-Book.ttf);
+src: local('Gotham-Book'), local('Gotham-Book'),
+url(../fonts/Gotham-Book.ttf) format('truetype');
+}
+@font-face {
+font-family: Gotham-Medium;
+src: url(Gotham-Medium.ttf);
+src: local('Gotham-Medium'), local('Gotham-Medium'),
+url(../fonts/Gotham-Medium.ttf) format('truetype');
+}
+@font-face {
+font-family: Gotham-Bold;
+src: url(Gotham-Bold.ttf);
+src: local('Gotham-Bold'), local('Gotham-Bold'),
+url(../fonts/Gotham-Bold.ttf) format('truetype');
+}
+
+h1, h2, {
+  font-family: 'Gotham-Bold';
+}
+h3, h4, h5, h6 {
+  font-family: 'Gotham-Medium';
+}
+p, li, a {
+  font-family: 'Gotham-Book';
+}
+
+
+
 h1 {
   color: #333;
 }
@@ -33,19 +68,20 @@ p {
   margin: 0 10px;
   height: 100%;
 }
+/*---------------*/
+/***  Carousel ***/
+/*---------------*/
 
-.carousel-inner {
+#owl-demo {
   max-height: 450px;
   overflow: hidden;
 }
 
-.carousel-caption {
-  top: 0px;
-}
-
-.carousel-inner .item img {
+#owl-demo .item img{
   position: relative;
-  top: -45x;
+  top: -45px;
+  display: block;
+  width: 100%;
 }
 
 
@@ -136,7 +172,7 @@ footer {
 
 
 /*---------------*/
-/***** Descriptions *****/
+/**Descriptions***/
 /*---------------*/
 .grid {
   overflow: hidden;

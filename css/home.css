@@ -84,6 +84,11 @@ p {
   width: 100%;
 }
 
+#owl-demo .slider-content {
+  position: absolute;
+  top: 100px;
+  left: 55px;
+}
 
 #take-action {
   background-color: #78b7e2;

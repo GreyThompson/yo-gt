@@ -426,4 +426,13 @@ figure.effect-sadie:hover p {
   margin-bottom: 40px;
 }
 
+#who-we-are .container {
+  width: 75%;
+  margin: 35px auto;
+}
+
+#who-we-are h3 {
+  text-align: center;
+  font-family: 'Gotham-Book';
+}
 

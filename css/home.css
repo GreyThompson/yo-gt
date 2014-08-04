@@ -84,6 +84,36 @@ p {
   width: 100%;
 }
 
+#owl-demo .slide-1-content {
+  position: absolute;
+  top: 85px;
+  left: 125px;
+}
+
+#owl-demo .slide-1-content h1 {
+  color: black;
+}
+
+#owl-demo .slide-2-content {
+  position: absolute;
+  top: 100px;
+  left: 185px;
+}
+
+#owl-demo .slide-2-content h1 {
+  color: white;
+}
+
+#owl-demo .slide-3-content {
+  position: absolute;
+  top: 100px;
+  right: 95px;
+  color: white;
+}
+
+#owl-demo .slide-3-content h1 {
+  color: white;
+}
 
 #take-action {
   background-color: #78b7e2;
@@ -426,4 +456,13 @@ figure.effect-sadie:hover p {
   margin-bottom: 40px;
 }
 
+#who-we-are .container {
+  width: 75%;
+  margin: 35px auto;
+}
+
+#who-we-are h3 {
+  text-align: center;
+  font-family: 'Gotham-Book';
+}
 

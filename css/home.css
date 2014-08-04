@@ -9,20 +9,20 @@ body {
 
 @font-face {
 font-family: Gotham-Book;
-src: url(Gotham-Book.ttf);
-src: local('Gotham-Book'), local('Gotham-Book'),
+src: url(../fonts/Gotham-Book.ttf);
+src: local('../fonts/Gotham-Book'), local('../fonts/Gotham-Book'),
 url(../fonts/Gotham-Book.ttf) format('truetype');
 }
 @font-face {
 font-family: Gotham-Medium;
-src: url(Gotham-Medium.ttf);
-src: local('Gotham-Medium'), local('Gotham-Medium'),
+src: url(../fonts/Gotham-Medium.ttf);
+src: local('../fonts/Gotham-Medium'), local('../fonts/Gotham-Medium'),
 url(../fonts/Gotham-Medium.ttf) format('truetype');
 }
 @font-face {
 font-family: Gotham-Bold;
-src: url(Gotham-Bold.ttf);
-src: local('Gotham-Bold'), local('Gotham-Bold'),
+src: url(../fonts/Gotham-Bold.ttf);
+src: local('../fonts/Gotham-Bold'), local('..fonts/Gotham-Bold'),
 url(../fonts/Gotham-Bold.ttf) format('truetype');
 }
 
@@ -67,9 +67,51 @@ p {
 .navbar-logo{
   margin: 0 10px;
 }
-/*---------------*/
-/***  Carousel ***/
-/*---------------*/
+
+/*
+~~~
+Buttons
+~~~
+*/
+/* General button styles */
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.action-button {
+
+}
+
+/*
+~~~
+Carousel
+~~~
+*/
 
 #owl-demo {
   max-height: 450px;

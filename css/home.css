@@ -66,7 +66,6 @@ p {
 
 .navbar-logo{
   margin: 0 10px;
-  height: 100%;
 }
 /*---------------*/
 /***  Carousel ***/
@@ -119,9 +118,7 @@ p {
   background-color: #78b7e2;
 }
 
-.donate-action,
-.volunteer-action,
-.subscribe-action {
+.user-action {
 	text-align: center;
 }
 
@@ -202,40 +199,38 @@ footer {
 .social-media-icon.twitter { background-position: -420px -0px; }
 
 
-/*---------------*/
-/**Descriptions***/
-/*---------------*/
-.grid {
+/* ~~~~
+Common styles for hoverboxes 
+~~~~*/
+.hoverbox {
   overflow: hidden;
   margin: 0;
-  padding: 3em 0 0 0;
-  width: 100%;
+  padding: 0;
   list-style: none;
   text-align: center;
 }
 
-/* Common style */
-.grid figure {
+.hoverbox h2 {
+  color: rgb(59, 104, 128);
+}
+
+.hoverbox figure {
   position: relative;
   z-index: 1;
   display: inline-block;
   overflow: hidden;
-  margin: -0.135em;
-  width: 100%;
-  height: 400px;
-  background: #3085a3;
   text-align: center;
   cursor: pointer;
 }
 
-.grid figure img {
+.hoverbox figure img {
   position: relative;
   display: block;
   min-height: 100%;
   opacity: 0.8;
 }
 
-.grid figure figcaption {
+.hoverbox figure figcaption {
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
@@ -244,13 +239,13 @@ footer {
   backface-visibility: hidden;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
+.hoverbox figure figcaption::before,
+.hoverbox figure figcaption::after {
   pointer-events: none;
 }
 
-.grid figure figcaption,
-.grid figure a {
+.hoverbox figure figcaption,
+.hoverbox figure a {
   position: absolute;
   top: 0;
   left: 0;
@@ -258,9 +253,10 @@ footer {
   height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure a {
+/* ~~~~
+These are the anchors 
+~~~~*/
+.hoverbox figure a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -268,23 +264,25 @@ footer {
   opacity: 0;
 }
 
-.grid figure h2 {
+.hoverbox figure h2 {
   word-spacing: -0.15em;
   font-weight: 300;
 }
 
-.grid figure h2 span {
+.hoverbox figure h2 span {
   font-weight: 800;
 }
 
-.grid figure h2,
-.grid figure p {
+.hoverbox figure h2,
+.hoverbox figure p {
   margin: 0;
 }
 
-.grid figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
+.hoverbox figure p {
+/*  letter-spacing: 1px;*/
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: justify;
 }
 figure.effect-sadie figcaption::before {
   position: absolute;
@@ -292,8 +290,8 @@ figure.effect-sadie figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-  background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+  background: -webkit-linear-gradient(top, rgba(86, 128, 228, 0) 0%, rgba(86, 128, 228, 0.8) 75%);
+  background: linear-gradient(to bottom, rgba(86, 128, 228, 0) 0%, rgba(86, 128, 228, 0.8) 75%);
   content: '';
   opacity: 0;
   -webkit-transform: translate3d(0,50%,0);
@@ -302,7 +300,7 @@ figure.effect-sadie figcaption::before {
 
 figure.effect-sadie h2 {
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 0;
   width: 100%;
   color: #484c61;
@@ -320,9 +318,9 @@ figure.effect-sadie p {
 
 figure.effect-sadie p {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  padding: 2em;
+  padding: 5em 2em 0 2em;
   width: 100%;
   opacity: 0;
   -webkit-transform: translate3d(0,10px,0);
@@ -341,6 +339,31 @@ figure.effect-sadie:hover p {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+
+/* ~~~~
+Unique Stylings for HOME and ABOUT
+~~~~*/
+
+.user-action .hoverbox figure {
+  width: 100%;
+  height: 300px;
+}
+.user-action .hoverbox figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 0.8;
+}
+
+
+.team .hoverbox figure {
+  width: 90%;
+  height: 400px;
+}
+
+
+
 /* START PROJECTS PAGE STYLES */
 
 .jumbotron {

@@ -8,32 +8,55 @@ body {
 /*---------------*/
 
 @font-face {
-font-family: Gotham-Book;
-src: url(../fonts/Gotham-Book.ttf);
-src: local('../fonts/Gotham-Book'), local('../fonts/Gotham-Book'),
-url(../fonts/Gotham-Book.ttf) format('truetype');
+    font-family: 'gotham_bookregular';
+    src: url('gotham-book-webfont.eot');
+    src: url('gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-book-webfont.woff') format('woff'),
+         url('gotham-book-webfont.ttf') format('truetype'),
+         url('gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+
+
+
 @font-face {
-font-family: Gotham-Medium;
-src: url(../fonts/Gotham-Medium.ttf);
-src: local('../fonts/Gotham-Medium'), local('../fonts/Gotham-Medium'),
-url(../fonts/Gotham-Medium.ttf) format('truetype');
+    font-family: 'gotham_boldregular';
+    src: url('gotham-bold-webfont.eot');
+    src: url('gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-bold-webfont.woff') format('woff'),
+         url('gotham-bold-webfont.ttf') format('truetype'),
+         url('gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+
+
+
 @font-face {
-font-family: Gotham-Bold;
-src: url(../fonts/Gotham-Bold.ttf);
-src: local('../fonts/Gotham-Bold'), local('..fonts/Gotham-Bold'),
-url(../fonts/Gotham-Bold.ttf) format('truetype');
+    font-family: 'gotham_mediumregular';
+    src: url('gotham-medium-webfont.eot');
+    src: url('gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('gotham-medium-webfont.woff') format('woff'),
+         url('gotham-medium-webfont.ttf') format('truetype'),
+         url('gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 h1, h2, {
-  font-family: 'Gotham-Bold';
+  font-family: 'gotham_boldregular';
 }
 h3, h4, h5, h6 {
-  font-family: 'Gotham-Medium';
+  font-family: 'gotham_mediumregular';
 }
 p, li, a {
-  font-family: 'Gotham-Book';
+  font-family: 'gotham_bookregular';
 }
 
 

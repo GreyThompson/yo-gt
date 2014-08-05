@@ -8,7 +8,7 @@ body {
 /*---------------*/
 
 @font-face {
-    font-family: 'gotham_bookregular';
+    font-family: 'gotham_book';
     src: url('../fonts/gotham-book-webfont.eot');
     src: url('../fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/gotham-book-webfont.woff') format('woff'),
@@ -23,7 +23,7 @@ body {
 
 
 @font-face {
-    font-family: 'gotham_boldregular';
+    font-family: 'gotham_bold';
     src: url('../fonts/gotham-bold-webfont.eot');
     src: url('../fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/gotham-bold-webfont.woff') format('woff'),
@@ -35,10 +35,8 @@ body {
 }
 
 
-
-
 @font-face {
-    font-family: 'gotham_mediumregular';
+    font-family: 'gotham_medium';
     src: url('../fonts/gotham-medium-webfont.eot');
     src: url('../fonts/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/gotham-medium-webfont.woff') format('woff'),
@@ -50,71 +48,187 @@ body {
 }
 
 h1, h2, {
-  font-family: 'gotham_boldregular';
+  font-family: 'gotham_bold';
 }
 h3, h4, h5, h6 {
-  font-family: 'gotham_mediumregular';
+  font-family: 'gotham_medium';
 }
 p, li, a {
-  font-family: 'gotham_bookregular';
+  font-family: 'gotham_book';
 }
 
 
+/*---------------------------------------
+ **   COLORS                         -----
+-----------------------------------------*/
 
-h1 {
-  color: #333;
+/** 
+~~~
+For Text and Font-Icons
+~~~
+**/
+.light-blue {
+  color: rgba(86, 178, 228, 0.9);
 }
+.medium-blue {
+  color: rgba(44, 146, 204, 0.9); 
+}
+.dark-blue {
+  color: rgba(59, 104, 128, 0.9);
+}
+.dark-text {
+  color: #404040;
+}
+.white-text {
+  color: #FFFFFF;
+}
+
+/*---------------------------------------
+ **   STYLE DEFAULTS                 -----
+-----------------------------------------*/
+
 p {
-  color: black;
-}
-.project-description, .volunteer-description {
   color: #333;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  color: rgb(44, 146, 204);
 }
 
 .heading {
   color: #2385c8;
 }
 
-.navbar-default {
+.navbar .navbar-default {
   background: #fff;
   border-bottom:1px solid #dddddd;
+  height: 200px;
 }
 
 .navbar-brand,
 .navbar-nav li a {
-    line-height: 85px;
-    height: 85px;
-    padding-top: 0;
+  font-size: 1em;
+  padding: 0;
+  margin: 2em;
+  line-height: 1.2em;
 }
 
+.navbar-nav li a:hover {
+  padding-top: 0;
+  line-height: 1.5em;
+  color: rgb(44, 146, 204);  
+}
 .navbar-logo{
-  margin: 0 10px;
+  margin: -10px 15px;
 }
 
-/*
+/** 
+~~~~
+BACKGROUNDS 
 ~~~
-Buttons
+**/
+.light-blue-bg {
+  background-color: rgba(86, 178, 228, 0.9);
+}
+.medium-blue-bg {
+  background-color: rgba(44, 146, 204, 0.9);  
+}
+.dark-blue-bg {
+  background-color: rgba(59, 104, 128, 0.9);
+}
+.light-grey-bg {
+  background-color: rgba(216,216,216, 0.9);
+}
+.medium-grey-bg {
+  background-color: rgba(128,128,128, 0.9);
+}
+.white-bg {
+  background-color: #fff;
+}
+/** 
+~~~~
+SEPARATORS 
 ~~~
-*/
-/* General button styles */
+**/
+
+.about-us {
+  max-height: 700px;
+}
+.about-links {
+  position: absolute;
+  left: 72%;
+  margin-top: -500px;
+  width: 300px;
+  float: right;
+}
+.about-links img, 
+.about-icons {
+  width: 30%;
+}
+.about-links h4 {
+  text-align: left;
+}
+/* Curves */
+#curveUpColor path,
+#curveDownColor path {
+  fill: rgba(86, 178, 228, 0.9);
+  stroke: rgba(86, 178, 228, 0.9);
+  padding-bottom: -10px;
+}
+
+.elon-separator {
+  background-image: url(../images/team/elonmusk.jpg)no-repeat;
+  background: url('../images/team/elonmusk.jpg') no-repeat;
+  height: 500px;
+  background-size: 70%;
+  top: 0;
+  margin-left: -100px;
+  background-attachment: fixed;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.overlay h2 {
+  text-align: left;
+  padding: 8% 35% 1% 5%;
+  color: white;
+}
+.film {
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/*---------------------------------------
+ **   BUTTON DEFAULTS               -----
+-----------------------------------------*/
+
 .btn {
-  border: none;
+  border: 4px solid rgba(86, 178, 228, 0.9);
   font-family: inherit;
   font-size: inherit;
-  color: inherit;
-  background: none;
+  background-color: rgba(86, 178, 228, 0.9);
   cursor: pointer;
-  padding: 25px 80px;
+  padding: 25px 40px;
   display: inline-block;
-  margin: 15px 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
   outline: none;
   position: relative;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  margin: 2rem 3rem;
 }
 
 .btn:after {
@@ -126,8 +240,124 @@ Buttons
   transition: all 0.3s;
 }
 
-.action-button {
+.btn:hover {
+  background: transparent;
+  color: rgba(44, 146, 204, 0.9);
+}
 
+.buttons {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 45px;
+}
+
+/*
+~~~
+Multi-coloured buttons
+~~~
+*/
+
+.light-blue-btn,.medium-blue-btn,.dark-blue-btn,.dark-btn {
+  color: #FFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.light-blue-btn:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 4px solid rgba(44, 146, 204, 0.9);
+}
+.medium-blue-btn:hover {
+  color: #fff;
+  background-color: rgba(86, 178, 228, 0.9);
+}
+.dark-blue-btn:hover {
+  color: #FFF;
+  background: rgba(44, 146, 204, 0.9);
+}
+
+/*---------------------------------------
+ **   BORDER BOTTOMS                 -----
+-----------------------------------------*/
+.blue-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: rgb(59, 104, 128);
+  bottom: -9px;
+  left: 12.5%;
+}
+.grey-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: rgb(128,128,128);
+  bottom: -9px;
+  left: 12.5%;
+}
+
+/*---------------------------------------
+ **   SECTION SETTINGS              -----
+-----------------------------------------*/
+
+/*** 
+~~~
+SECTION HEADERS 
+~~~
+***/
+.our-projects , .who-we-are, .take-action, .why-spine, .about-us, .our-partners  {
+  padding-top: 2%; 
+}
+.section-header {
+  text-align: center;
+  padding-bottom: 75px;
+}
+.section-header h2 {
+  padding-bottom: 10px;
+  line-height: 40px;
+  position: relative;
+  display: inline-block;
+}
+.section-header h6 {
+  font-size: 16px;
+}
+
+/*
+~~~
+OUR PROJECTS
+~~~
+*/
+.our-projects {
+  margin-top: -10px;
+  background-color: rgb(86, 178, 228);
+}
+.feature-projects {
+  margin-bottom: 2rem;
+}
+.project-description {
+  text-align: justify;
+  margin: 3rem 0;
+}
+.project-description a {
+  font-family: 'gotham_bold';
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+~~~
+USER-ACTIONS
+~~~
+*/
+.user-action {
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /*
@@ -148,47 +378,17 @@ Carousel
   width: 100%;
 }
 
-#owl-demo .slide-1-content {
+.slide-copy {
   position: absolute;
-  top: 85px;
-  left: 125px;
+  top: 10%;
+  left: 10%;
+  max-width: 40%;
 }
-
-#owl-demo .slide-1-content h1 {
-  color: black;
+.slide-copy h1 {
+  font-family: 'gotham_medium';
 }
-
-#owl-demo .slide-2-content {
-  position: absolute;
-  top: 100px;
-  left: 185px;
-}
-
-#owl-demo .slide-2-content h1 {
-  color: white;
-}
-
-#owl-demo .slide-3-content {
-  position: absolute;
-  top: 100px;
-  right: 95px;
-  color: white;
-}
-
-#owl-demo .slide-3-content h1 {
-  color: white;
-}
-
-#take-action {
-  background-color: #78b7e2;
-}
-
-.user-action {
-	text-align: center;
-}
-
-.btn-lg {
-	margin: 40px 0;
+.right {
+  left: 60%;  
 }
 
 .navbar {
@@ -199,41 +399,21 @@ Carousel
   font-size: 1.5em;
 }
 
-#our-projects {
-  background-color: #1a6395;
-  padding: 0 0 20px 0px;
-}
-
-#about-us {
-  background-color: #2385c8;
-  padding: 0 0 20px 0px;
-}
-
-#our-partners {
-  background-color: #f1f1f2;
-  padding: 0 0 20px 0px;
-}
 
 .partner-logo {
   height: 50px;
 }
 
-#sponsor-org-box {
+.sponsor-org {
   margin: 40px 0;
 }
 
-#sponsor-org-box h5, #prof-assoc-box h5 {
-  color:#2385c8;
+.sponsor-org-box h5, .prof-assoc-box h5 {
   margin-bottom:40px;
 }
 
-#prof-assoc-box {
-  margin: 40px 0;
-}
 
 footer {
-	background:#eee;
-  padding-bottom: 55px;
   color: black;
 }
 
@@ -275,10 +455,6 @@ Common styles for hoverboxes
   text-align: center;
 }
 
-.hoverbox h2 {
-  color: rgb(59, 104, 128);
-}
-
 .hoverbox figure {
   position: relative;
   z-index: 1;
@@ -297,7 +473,6 @@ Common styles for hoverboxes
 
 .hoverbox figure figcaption {
   padding: 2em;
-  color: #fff;
   text-transform: uppercase;
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
@@ -355,8 +530,8 @@ figure.effect-sadie figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(86, 128, 228, 0) 0%, rgba(86, 128, 228, 0.8) 75%);
-  background: linear-gradient(to bottom, rgba(86, 128, 228, 0) 0%, rgba(86, 128, 228, 0.8) 75%);
+  background: -webkit-linear-gradient(top, rgba(86, 178, 228, 0) 0%, rgba(86, 178, 228, 0) 75%);
+  background: linear-gradient(to bottom, rgba(86, 178, 228, 0) 0%, rgba(86, 178, 228, 0.9) 75%);
   content: '';
   opacity: 0;
   -webkit-transform: translate3d(0,50%,0);
@@ -368,7 +543,6 @@ figure.effect-sadie h2 {
   top: 90%;
   left: 0;
   width: 100%;
-  color: #484c61;
   -webkit-transition: -webkit-transform 0.35s, color 0.35s;
   transition: transform 0.35s, color 0.35s;
   -webkit-transform: translate3d(0,-50%,0);
@@ -393,7 +567,7 @@ figure.effect-sadie p {
 }
 
 figure.effect-sadie:hover h2 {
-  color: #fff;
+  color: rgb(59, 104, 128);
   -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
   transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
 }
@@ -428,8 +602,9 @@ Unique Stylings for HOME and ABOUT
 }
 
 
-
-/* START PROJECTS PAGE STYLES */
+/*---------------------------------------
+ **        BACKGROUNDS              -----
+-----------------------------------------*/
 
 .jumbotron {
   background-size: cover;
@@ -444,6 +619,11 @@ Unique Stylings for HOME and ABOUT
   background-image: url(../images/volunteer-shoshong.jpg);
 
 }
+
+.polygon-bg {
+  background-image: url(..images/backgrounds/);
+}
+
 
 .play-btn-box {
   line-height: 400px;
@@ -490,6 +670,21 @@ Unique Stylings for HOME and ABOUT
   padding-bottom: 10px;
 }
 
+/*---------------------------------------
+ **   PICTURES                      -----
+-----------------------------------------*/
+
+/*
+~~~
+PROJECT PICS
+~~~
+*/
+
+.img-wrapper {
+  border-radius: 50%;
+  height: 200px;
+}
+
 .botswana-jumbo {
   background-image: url(../images/project-pics/botswana/shoshong1.jpg);
   background-position: 50% 75%;
@@ -521,6 +716,8 @@ Unique Stylings for HOME and ABOUT
   margin-right: 20px;
   margin-bottom: 10px;
 }
+
+
 
 /* Social Media Icons */
 
@@ -573,13 +770,12 @@ Unique Stylings for HOME and ABOUT
   margin-bottom: 40px;
 }
 
-#who-we-are .container {
-  width: 75%;
-  margin: 35px auto;
-}
-
-#who-we-are h3 {
+.who-we-are {
   text-align: center;
-  font-family: 'Gotham-Book';
+  letter-spacing: 0.2rem;
+}
+.who-we-are h3 {
+  font-family: 'gotham_book';
+  line-height: 1.5em;
 }
 

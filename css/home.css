@@ -34,7 +34,6 @@ body {
 
 }
 
-
 @font-face {
     font-family: 'gotham_medium';
     src: url('../fonts/gotham-medium-webfont.eot');
@@ -50,8 +49,11 @@ body {
 h1, h2, {
   font-family: 'gotham_bold';
 }
-h3, h4, h5, h6 {
+h3, h4, h5 {
   font-family: 'gotham_medium';
+}
+h6 {
+  font-family: 'gotham_book';
 }
 p, li, a {
   font-family: 'gotham_book';
@@ -156,19 +158,50 @@ SEPARATORS
 **/
 
 .about-us {
-  max-height: 700px;
+  font-family: 'gotham_book';
+  position: relative;
+  overflow: hidden;
 }
 .about-links {
   position: absolute;
-  left: 72%;
-  margin-top: -500px;
   width: 300px;
   float: right;
 }
-.about-links img, 
+
+
+/* Rounded center split and bottom rounded */
+.roundedsplit {
+  position: relative;
+  padding: 10em 10%;
+  color: #fff;
+  text-align: center;  
+  padding-top: 7em;
+  border-radius: 0 0 80px 80px;
+}
+
+.roundedsplit::before {
+  top: -70px;
+  left: 0;
+  z-index: 10;
+  width: 50%;
+  height: 70px;
+  background: inherit;
+}
+
+.roundedsplit::before {
+  border-radius: 0 80px 0 0;
+}
+
+.invertedrounded {
+  margin-bottom: 90px;
+  padding: 13em 10% 10em;
+  border-radius: 0 0 0 90px;
+}
+
+/*.about-links img, 
 .about-icons {
   width: 30%;
-}
+}*/
 .about-links h4 {
   text-align: left;
 }
@@ -184,23 +217,35 @@ SEPARATORS
   background-image: url(../images/team/elonmusk.jpg)no-repeat;
   background: url('../images/team/elonmusk.jpg') no-repeat;
   height: 500px;
-  background-size: 70%;
-  top: 0;
-  margin-left: -100px;
+  width: 100%;
+  margin-top: -10px;
+  background-size: 100%;
+  top: -50px;
   background-attachment: fixed;
 }
 .overlay {
-  position: absolute;
   left: 0;
   height: 100%;
   width: 100%;
-  text-align: center;
+  background-color: rgba(86, 178, 228, 0.5);
 }
-.overlay h2 {
-  text-align: left;
+
+.overlay h6 {
+  text-align: justify;
   padding: 8% 35% 1% 5%;
   color: white;
+  font-family: 'gotham_book';
+  font-weight: 100;
+  line-height: 5rem;  
+  letter-spacing: 0.7rem;
+  word-spacing: 1rem;
+  font-size: 3rem;
 }
+
+.overlay span {
+  border-bottom: 3px solid rgb(86, 178, 228);
+}
+
 .film {
   position: absolute;
   background-color: rgba(0,0,0,0.2);
@@ -311,12 +356,12 @@ Multi-coloured buttons
 SECTION HEADERS 
 ~~~
 ***/
-.our-projects , .who-we-are, .take-action, .why-spine, .about-us, .our-partners  {
+.our-projects , .who-we-are, .take-action, .why-spine, .our-partners  {
   padding-top: 2%; 
 }
 .section-header {
   text-align: center;
-  padding-bottom: 75px;
+  padding: 75px 0;
 }
 .section-header h2 {
   padding-bottom: 10px;
@@ -362,6 +407,16 @@ USER-ACTIONS
 
 /*
 ~~~
+USER-ACTIONS
+~~~
+*/
+
+.our-partners {
+  padding-bottom: 2%;
+  background-color: #f1f1f2;
+}
+/*
+~~~
 Carousel
 ~~~
 */
@@ -395,6 +450,10 @@ Carousel
 	margin-bottom: 0;
 }
 
+.individual-projects {
+/*  min-height: 560px;*/
+  margin-bottom: 2%;
+}
 .icon-copy {
   font-size: 1.5em;
 }
@@ -404,13 +463,13 @@ Carousel
   height: 50px;
 }
 
-.sponsor-org {
+/*.sponsor-org {
   margin: 40px 0;
 }
 
 .sponsor-org-box h5, .prof-assoc-box h5 {
   margin-bottom:40px;
-}
+}*/
 
 
 footer {
@@ -773,9 +832,11 @@ PROJECT PICS
 .who-we-are {
   text-align: center;
   letter-spacing: 0.2rem;
+  padding-bottom: 3rem;
 }
 .who-we-are h3 {
   font-family: 'gotham_book';
   line-height: 1.5em;
 }
+
 

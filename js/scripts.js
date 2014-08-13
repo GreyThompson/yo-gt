@@ -1,37 +1,29 @@
 /*=================================
 ===    CAROUSEL                ====
 =================================== */
+
 $(document).ready(function() {
- 
-  $("#owl-demo").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem: true,
-        autoPlay: 3000, 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
+  $('.main-nav-list').onePageNav({
+    scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
+    scrollOffset: 75 //Height of Navigation Bar
   });
- 
+  
+  // Sticky Header - http://jqueryfordesigners.com/fixed-floating-elements/         
+  var top = $('#main-nav').offset().top - parseFloat($('#main-nav').css('margin-top').replace(/auto/, 0));
+  
+  $(window).scroll(function (event) {
+    // what the y position of the scroll is
+    var y = $(this).scrollTop();
+    
+    // whether that's below the form
+    if (y >= top) {
+      // if so, ad the fixed class
+      $('#main-nav').addClass('fixed');
+    } else {
+      // otherwise remove it
+      $('#main-nav').removeClass('fixed');
+    }
+  });
+  
 });
 
-/*=================================
-===  SMOOTH SCROLL             ====
-=================================== */
-var scrollAnimationTime = 1200,
-        scrollAnimation = 'easeInOutExpo';
-    $('a.scrollto').bind('click.smoothscroll',function (event) {
-        event.preventDefault();
-        var target = this.hash;
-        $('html, body').stop().animate({
-            'scrollTop': $(target).offset().top
-        }, scrollAnimationTime, scrollAnimation, function () {
-            window.location.hash = target;
-        });
-    });   

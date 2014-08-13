@@ -367,6 +367,26 @@
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!--~~~FIX ME!!!  -->
+<script>  
+$(document).ready(function() {
+  $("#owl-demo").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem: true,
+        autoPlay: 3000, 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+
+}); </script>  
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/owl.carousel.min.js"></script>

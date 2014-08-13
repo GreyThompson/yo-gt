@@ -204,6 +204,14 @@ SEPARATORS
   padding: 1.2rem;
   text-decoration: none;
 }
+.sub-nav .projects> li {
+  margin-top: -30px;
+}
+.projects .about-icon {
+  width: 70%;
+  height: 150px;
+  margin-top: -10px;
+}
 
 .about-links h4 {
   text-align: left;
@@ -699,18 +707,16 @@ Unique Stylings for HOME and ABOUT
  **        BACKGROUNDS              -----
 -----------------------------------------*/
 
-.jumbotron {
-  background-size: cover;
-  height: 400px;
-}
 
 .project-jumbo {
   background-image: url(../images/first-team.jpg);
+  background-size: cover;
+  min-height: 400px;
+  width: 100%;
 }
 
 .volunteer-jumbo {
   background-image: url(../images/volunteer-shoshong.jpg);
-
 }
 
 .polygon-bg {
@@ -720,23 +726,15 @@ Unique Stylings for HOME and ABOUT
   background-position: -300px;
   background-attachment: fixed;
 }
-
-.side-bg {
-
+span .glyphicon .glyphicon-play-circle {
+  margin: 0 auto;
 }
+
 .abstract-spine {/*
   background-image: url(../images/abstract-spine.png);
   background-size: cover;*/
   height: 1000px;
   width: 100%;
-}
-
-.play-btn-box {
-  line-height: 400px;
-}
-
-.modal-play-btn {
-  color: white;
 }
 
 /* Responsive YouTube Embed Start */
@@ -753,6 +751,14 @@ Unique Stylings for HOME and ABOUT
   top: 0; left: 0;
   width: 100%; height: 100%;
 } /* Responsive YouTube Embed End */
+
+.glyphicon-play-circle {
+  margin: 20% 40%;
+  color: white;
+}
+.glyphicon-play-circle:hover {
+  cursor: pointer;
+}
 
 /* Project Page Styles */
 
@@ -790,12 +796,17 @@ SUBNAV FOR ABOUT US AND PROJECTS
   margin: 0 auto;
 }
 .sub-nav li {
+  margin: 0;  
   text-decoration: none;
   list-style: none;  
   text-align: center;
 }
 .sub-nav li:hover{
   text-decoration: none;
+}
+.sub-nav .projects li {
+  margin: 2rem 0;
+  text-align: left;
 }
 .current a {
   color: rgb(44, 146, 204);

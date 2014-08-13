@@ -99,15 +99,9 @@ a {
 a:hover {
   text-decoration: none;
 }
-
-.heading {
-  color: #2385c8;
-}
-
-.navbar .navbar-default {
-  background: #fff;
-  border-bottom:1px solid #dddddd;
-  height: 200px;
+.navbar-fixed-top {
+  background-color: #fff;
+  height: 80px;
 }
 
 .navbar-brand,
@@ -120,7 +114,6 @@ a:hover {
 
 .navbar-nav li a:hover {
   padding-top: 0;
-  line-height: 1.5em;
   color: rgb(44, 146, 204);  
 }
 .navbar-logo{
@@ -212,7 +205,9 @@ SEPARATORS
   height: 150px;
   margin-top: -10px;
 }
-
+.about-icon-blank {
+  margin: 0 0;
+}
 .about-links h4 {
   text-align: left;
 }
@@ -451,7 +446,7 @@ Carousel
 ~~~
 */
 
-.take-action::before {
+/*.take-action::before {
   content: "";
   width: 0px;
   height: 0px;
@@ -461,7 +456,7 @@ Carousel
   border-color: rgb(86, 178, 228)  transparent transparent transparent;
   left: 50%;
   margin-left: -0.496em;
-}
+}*/
 
 #owl-demo {
   max-height: 450px;
@@ -517,7 +512,6 @@ Carousel
 footer {
   color: black;
 }
-
 .site-map li {
 	display: block;
 }
@@ -707,7 +701,9 @@ Unique Stylings for HOME and ABOUT
  **        BACKGROUNDS              -----
 -----------------------------------------*/
 
-
+.project-landing {
+  padding-top: 100px;
+}
 .project-jumbo {
   background-image: url(../images/first-team.jpg);
   background-size: cover;
@@ -760,9 +756,17 @@ span .glyphicon .glyphicon-play-circle {
   cursor: pointer;
 }
 
-/* Project Page Styles */
+/* 
+~~~
+Project Page Styles 
+~~~
+*/
 
-.dropdown li a {
+
+
+
+
+/*.dropdown li a {
   line-height: 35px !important;
   height: 35px !important;
 }
@@ -780,7 +784,7 @@ span .glyphicon .glyphicon-play-circle {
 .project-summary {
   font-size: 1.25em;
   padding-bottom: 10px;
-}
+}*/
 /*
 ~~~
 SUBNAV FOR ABOUT US AND PROJECTS
@@ -794,6 +798,8 @@ SUBNAV FOR ABOUT US AND PROJECTS
   border-right: 3px solid rgb(86, 178, 228);
   width: 160px;
   margin: 0 auto;
+  background-color: #fff;
+  padding-bottom: 110px;
 }
 .sub-nav li {
   margin: 0;  
@@ -805,7 +811,7 @@ SUBNAV FOR ABOUT US AND PROJECTS
   text-decoration: none;
 }
 .sub-nav .projects li {
-  margin: 2rem 0;
+  margin: 1rem 0;
   text-align: left;
 }
 .current a {

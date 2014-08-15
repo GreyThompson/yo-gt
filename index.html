@@ -14,9 +14,8 @@
 
   <!-- Carousel -->
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-  <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
   <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
-
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <title>WSC</title>
@@ -56,7 +55,7 @@
   <!-- Navbar End -->
 
   <!-- Carousel Start -->
-     <div id="owl-demo" class="owl-carousel owl-theme">
+     <div id="owl-demo" class="owl-carousel owl-fade-in">
       <div class="item">
         <img src="images/DSC_8821.jpg" alt="">
         <div class="slide-copy dark-text">
@@ -370,13 +369,15 @@
   <!--~~~FIX ME!!!  -->
 <script>  
 $(document).ready(function() {
-  $("#owl-demo").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
+
+      var owl = $("#owl-demo");
+
+    owl.owlCarousel({
+      navigation : false, // Show next and prev buttons
       singleItem: true,
-        autoPlay: 3000, 
+      autoPlay: 3000, 
+      transitionStyle : "fade",
+      lazyEffect : "fade",      
       // "singleItem:true" is a shortcut for:
       // items : 1, 
       // itemsDesktop : false,

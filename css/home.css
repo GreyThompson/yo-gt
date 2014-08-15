@@ -197,9 +197,9 @@ SEPARATORS
 
 .about-icon {
   display: inline-block;
-  width: 80px;
+  width: 60px;
   margin: 1rem auto;
-  padding: 1.2rem;
+  padding: 1rem;
   text-decoration: none;
 }
 .sub-nav .projects> li {
@@ -208,7 +208,7 @@ SEPARATORS
 .projects .about-icon {
   width: 70%;
   height: 150px;
-  margin-top: -10px;
+  margin: 0;
 }
 .about-icon-blank {
   margin: 0 0;
@@ -404,6 +404,8 @@ SECTION HEADERS
 }
 .section-lead {
   padding: 1rem 0 3rem 1.5rem;
+  text-align: right;
+  margin-right: 27%;
 }
 .section-lead h5{
   text-transform: uppercase;
@@ -474,7 +476,6 @@ Carousel
 }
 
 #owl-demo .item img{
-  position: relative;
   top: -45px;
   display: block;
   width: 100%;
@@ -521,6 +522,7 @@ Carousel
 
 footer {
   color: black;
+  display: block;
 }
 .site-map li {
 	display: block;
@@ -596,6 +598,12 @@ Common styles for hoverboxes
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+.animated {
+  animation-duration: 4s !important;
+  animation-fill-mode: both;
 }
 
 /* ~~~~
@@ -711,13 +719,13 @@ Unique Stylings for HOME and ABOUT
  **        BACKGROUNDS              -----
 -----------------------------------------*/
 
-.project-landing {
+/*.project-landing {
   padding-top: 100px;
-}
+}*/
 .project-jumbo {
   background-image: url(../images/first-team.jpg);
   background-size: cover;
-  min-height: 400px;
+  min-height: 300px;
   width: 100%;
 }
 
@@ -803,33 +811,40 @@ SUBNAV FOR ABOUT US AND PROJECTS
 */
 .sub-nav {
   position: fixed;
-  display: fixed;
-  font-size: 2rem;
+  display: block;
   border-right: 3px solid rgb(86, 178, 228);
   width: 160px;
   margin: 0 auto;
-  background-color: #fff;
-  padding-bottom: 110px;
 }
-.sub-nav .projects {
+.sub-nav img {
+  display: block;
+  width: 7rem;
+}
+.sub-nav h4 {
+  margin: -0.2rem 0;
+}
+/*.sub-nav .projects {
   padding-top: 90px;
-}
+}*/
 .sub-nav li {
-  margin: 0;  
+  margin: 0rem; 
   text-decoration: none;
   list-style: none;  
   text-align: center;
+}
+.main-nav-list li:first-of-type  {
+  margin-top: 1.5rem;
 }
 .sub-nav li:hover{
   text-decoration: none;
 }
 .sub-nav .projects li {
-  margin: 1rem 0;
+  margin: 0 0;
+  padding: 1.5rem 0;
   text-align: left;
 }
 .current a {
   color: rgb(44, 146, 204);
-  font-size: 2rem;
   position: relative;
   outline: none;
   text-decoration: none;

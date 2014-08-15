@@ -234,11 +234,22 @@ SEPARATORS
   top: -50px;
   background-attachment: fixed;
 }
+.poly-separator {
+  background-image: url(../images/backgrounds/bluepoly.jpg)no-repeat;
+  background: url('../images/backgrounds/bluepoly.jpg') no-repeat;
+  height: 400px;
+  width: 100%;
+  margin-top: -10px;
+  background-size: 100%;
+  top: -50px;
+  background-attachment: fixed;  
+}
 .overlay {
+  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(86, 178, 228, 0.5);
+  background-color: rgba(86, 178, 228, 0.3);
 }
 
 .overlay h6 {
@@ -251,10 +262,6 @@ SEPARATORS
   letter-spacing: 0.7rem;
   word-spacing: 1rem;
   font-size: 3rem;
-}
-
-.overlay span {
-  border-bottom: 3px solid rgb(86, 178, 228);
 }
 
 .film {
@@ -284,7 +291,6 @@ SEPARATORS
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  margin: 2rem 3rem;
 }
 
 .btn:after {
@@ -388,10 +394,13 @@ SECTION HEADERS
 .who-we-are, .take-action, .why-spine, .our-partners  {
   padding-top: 2%; 
 }
+.navbar {
+  background-color: rgba(0,0,0,0);
+}
 .section-header {
   text-align: center;
   padding: 75px 0;
-  font-family: 'gotham_book' !important;
+  font-family: 'gotham_medium' !important;
 }
 .section-header h2 {
   padding-bottom: 10px;
@@ -719,18 +728,26 @@ Unique Stylings for HOME and ABOUT
  **        BACKGROUNDS              -----
 -----------------------------------------*/
 
-/*.project-landing {
-  padding-top: 100px;
-}*/
+.project-landing {
+  height: 100%;
+  margin: 0;
+}
 .project-jumbo {
   background-image: url(../images/first-team.jpg);
   background-size: cover;
   min-height: 300px;
-  width: 100%;
+  width: 87%;
+  float: right;
+  margin: 0;
 }
 
 .volunteer-jumbo {
   background-image: url(../images/volunteer-shoshong.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-attachment: fixed;
 }
 
 .polygon-bg {
@@ -849,6 +866,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
   outline: none;
   text-decoration: none;
 }
+.current span {
+  border-bottom: 3px solid rgb(86, 178, 228);
+}
 .current img {
   border-bottom: 3px solid rgb(86, 178, 228);
 }
@@ -939,20 +959,8 @@ PROJECT PICS
 
 /* Resources */
 
-.heading.resources {
-  padding:10px 45px;
-}
-
-.resource-category {
-  margin:40px 0 20px 0;
-  text-align: center;
-}
-
 .model-of-care {
-  color: #000;
-  font-size: 1.2em;
-  padding:0 45px;
-  margin-bottom: 40px;
+
 }
 
 .who-we-are {

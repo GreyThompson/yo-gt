@@ -3,7 +3,7 @@
 =================================== */
 
 $(document).ready(function() {
-  $('.main-nav-list').onePageNav({
+  $('.main-nav-list, .underline').onePageNav({
     scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
     scrollOffset: 75 //Height of Navigation Bar
   });

@@ -36,7 +36,7 @@
 	// the plugin prototype
 	OnePageNav.prototype = {
 		defaults: {
-			currentClass: 'current',
+			currentClass: 'current' || 'underline',
 			changeHash: false,
 			easing: 'swing',
 			filter: '',

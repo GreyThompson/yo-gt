@@ -263,6 +263,19 @@ SEPARATORS
   background-size: cover;
   background-attachment: fixed;    
 }
+.blueprint {
+  background: url('../images/backgrounds/blueprint-small.gif') repeat;
+  background-image: url(../images/backgrounds/blueprint-small.gif);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
 .overlay {
   top: 0;
   left: 0;

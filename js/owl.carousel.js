@@ -12,6 +12,7 @@
 /*global dragMove: false, dragEnd: false, $, jQuery, alert, window, document */
 /*jslint nomen: true, continue:true */
 
+
 if (typeof Object.create !== "function") {
     Object.create = function (obj) {
         function F() {}
@@ -1461,7 +1462,7 @@ if (typeof Object.create !== "function") {
         singleItem : false,
         itemsScaleUp : false,
 
-        slideSpeed : 200,
+        slideSpeed : false,
         paginationSpeed : 800,
         rewindSpeed : 1000,
 
@@ -1483,7 +1484,7 @@ if (typeof Object.create !== "function") {
         baseClass : "owl-carousel",
         theme : "owl-theme",
 
-        lazyLoad : false,
+        lazyLoad : true,
         lazyFollow : true,
         lazyEffect : "fade",
 
@@ -1497,7 +1498,7 @@ if (typeof Object.create !== "function") {
         touchDrag : true,
 
         addClassActive : false,
-        transitionStyle : false,
+        transitionStyle : "fade",
 
         beforeUpdate : false,
         afterUpdate : false,

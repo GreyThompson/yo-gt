@@ -8,85 +8,316 @@ body {
 /*---------------*/
 
 @font-face {
-font-family: Gotham-Book;
-src: url(../fonts/Gotham-Book.ttf);
-src: local('../fonts/Gotham-Book'), local('../fonts/Gotham-Book'),
-url(../fonts/Gotham-Book.ttf) format('truetype');
+    font-family: 'gotham_book';
+    src: url('../fonts/gotham-book-webfont.eot');
+    src: url('../fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-book-webfont.woff') format('woff'),
+         url('../fonts/gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
+
+
+
 @font-face {
-font-family: Gotham-Medium;
-src: url(../fonts/Gotham-Medium.ttf);
-src: local('../fonts/Gotham-Medium'), local('../fonts/Gotham-Medium'),
-url(../fonts/Gotham-Medium.ttf) format('truetype');
+    font-family: 'gotham_bold';
+    src: url('../fonts/gotham-bold-webfont.eot');
+    src: url('../fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-bold-webfont.woff') format('woff'),
+         url('../fonts/gotham-bold-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 @font-face {
-font-family: Gotham-Bold;
-src: url(../fonts/Gotham-Bold.ttf);
-src: local('../fonts/Gotham-Bold'), local('..fonts/Gotham-Bold'),
-url(../fonts/Gotham-Bold.ttf) format('truetype');
+    font-family: 'gotham_medium';
+    src: url('../fonts/gotham-medium-webfont.eot');
+    src: url('../fonts/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-medium-webfont.woff') format('woff'),
+         url('../fonts/gotham-medium-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 h1, h2, {
-  font-family: 'Gotham-Bold';
+  font-family: 'gotham_bold';
 }
-h3, h4, h5, h6 {
-  font-family: 'Gotham-Medium';
+h3, h4, h5 {
+  font-family: 'gotham_medium';
+}
+h6 {
+  font-family: 'gotham_book';
 }
 p, li, a {
-  font-family: 'Gotham-Book';
+  font-family: 'gotham_book';
 }
 
 
+/*---------------------------------------
+ **   COLORS                         -----
+-----------------------------------------*/
 
-h1 {
-  color: #333;
+/**
+~~~
+For Text and Font-Icons
+~~~
+**/
+.light-blue {
+  color: rgba(86, 178, 228, 0.9);
 }
+.medium-blue {
+  color: rgba(44, 146, 204, 0.9);
+}
+.dark-blue {
+  color: rgba(59, 104, 128, 0.9);
+}
+.dark-text {
+  color: #404040;
+}
+.white-text {
+  color: #FFFFFF;
+}
+
+/*---------------------------------------
+ **   STYLE DEFAULTS                 -----
+-----------------------------------------*/
+
 p {
-  color: black;
+  color: #333;
 }
-.project-description, .volunteer-description {
+blockquote {
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  font-family: 'gotham_book';
+}
+
+a {
   color: #333;
 }
 
-.heading {
-  color: #2385c8;
+a:hover {
+  text-decoration: none;
 }
-
-.navbar-default {
-  background: #fff;
-  border-bottom:1px solid #dddddd;
+.navbar-fixed-top {
+  background-color: #fff;
+  height: 80px;
 }
 
 .navbar-brand,
 .navbar-nav li a {
-    line-height: 85px;
-    height: 85px;
-    padding-top: 0;
+  font-size: 1em;
+  padding: 0;
+  margin: 2em;
+  line-height: 1.2em;
 }
 
+.navbar-nav li a:hover {
+  padding-top: 0;
+  color: rgb(44, 146, 204);
+}
 .navbar-logo{
-  margin: 0 10px;
+  margin: -10px 15px;
 }
 
-/*
+/**
+~~~~
+BACKGROUNDS
 ~~~
-Buttons
+**/
+.light-blue-bg {
+  background-color: rgba(86, 178, 228, 0.9);
+}
+.medium-blue-bg {
+  background-color: rgba(44, 146, 204, 0.9);
+}
+.dark-blue-bg {
+  background-color: rgba(59, 104, 128, 0.9);
+}
+.light-grey-bg {
+  background-color: rgba(216,216,216, 0.9);
+}
+.medium-grey-bg {
+  background-color: rgba(128,128,128, 0.9);
+}
+.white-bg {
+  background-color: #fff;
+}
+/**
+~~~~
+SEPARATORS
 ~~~
-*/
-/* General button styles */
+**/
+
+.about-us {
+  font-family: 'gotham_book';
+  position: relative;
+  overflow: hidden;
+}
+.about-links {
+  position: absolute;
+  width: 300px;
+  float: right;
+}
+
+
+/* Rounded center split and bottom rounded */
+.roundedsplit {
+  position: relative;
+  padding: 10em 10%;
+  color: #fff;
+  text-align: center;
+  padding-top: 7em;
+  border-radius: 0 0 80px 80px;
+}
+
+.roundedsplit::before {
+  top: -70px;
+  left: 0;
+  z-index: 10;
+  width: 50%;
+  height: 70px;
+  background: inherit;
+}
+
+.roundedsplit::before {
+  border-radius: 0 80px 0 0;
+}
+
+.invertedrounded {
+  margin-bottom: 90px;
+  padding: 13em 10% 10em;
+  border-radius: 0 0 0 90px;
+}
+
+.about-icon {
+  display: inline-block;
+  width: 60px;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-decoration: none;
+}
+.sub-nav .projects> li {
+  margin-top: -30px;
+}
+.projects .about-icon {
+  width: 70%;
+  height: 150px;
+  margin: 0;
+}
+.about-icon-blank {
+  margin: 0 0;
+}
+.about-links h4 {
+  text-align: left;
+}
+/* Curves */
+#curveUpColor path,
+#curveDownColor path {
+  fill: rgba(86, 178, 228, 0.9);
+  stroke: rgba(86, 178, 228, 0.9);
+  padding-bottom: -10px;
+}
+
+.elon-separator {
+  background-image: url(../images/team/elonmusk.jpg)no-repeat;
+  background: url('../images/team/elonmusk.jpg') no-repeat;
+  height: 500px;
+  width: 100%;
+  margin-top: -10px;
+  background-size: 100%;
+  top: -50px;
+  background-attachment: fixed;
+}
+.poly-separator {
+  background-image: url(../images/backgrounds/bluepoly.jpg)no-repeat;
+  background: url('../images/backgrounds/bluepoly.jpg') no-repeat;
+  height: 400px;
+  width: 100%;
+  margin-top: -10px;
+  background-size: 100%;
+  top: -50px;
+  background-attachment: fixed;
+}
+/*.poly-separator-two {
+  background-image: url(../images/backgrounds/bluepoly2.jpg);
+  background: url('../images/backgrounds/bluepoly2.jpg');
+  height: 400px;
+  width: 100%;
+  margin-top: -10px;
+  top: -50px;
+  background-attachment: fixed;
+}*/
+.triangle-separator {
+  background-image: url(../images/backgrounds/bluetriangles.jpg);
+  background: url('../images/backgrounds/bluetriangles.jpg');
+  height: 400px;
+  width: 100%;
+  margin-top: -10px;
+  top: -50px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.blueprint {
+  background: url('../images/backgrounds/blueprint-small.gif') repeat;
+  background-image: url(../images/backgrounds/blueprint-small.gif);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+.overlay {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(86, 178, 228, 0.3);
+}
+
+.overlay h6 {
+  text-align: justify;
+  padding: 8% 35% 1% 5%;
+  color: white;
+  font-family: 'gotham_book';
+  font-weight: 100;
+  line-height: 5rem;
+  letter-spacing: 0.7rem;
+  word-spacing: 1rem;
+  font-size: 3rem;
+}
+
+.film {
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/*---------------------------------------
+ **   BUTTON DEFAULTS               -----
+-----------------------------------------*/
+
 .btn {
-  border: none;
+  border: 4px solid rgba(86, 178, 228, 0.9);
   font-family: inherit;
   font-size: inherit;
-  color: inherit;
-  background: none;
+  background-color: rgba(86, 178, 228, 0.9);
   cursor: pointer;
-  padding: 25px 80px;
+  padding: 25px 40px;
   display: inline-block;
-  margin: 15px 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
   outline: none;
   position: relative;
   -webkit-transition: all 0.3s;
@@ -103,15 +334,189 @@ Buttons
   transition: all 0.3s;
 }
 
-.action-button {
-
+.btn:hover {
+  background: transparent;
+  color: rgba(44, 146, 204, 0.9);
 }
 
+.buttons {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 45px;
+}
+
+/*
+~~~
+TEXT-DEFAULTS
+~~~
+*/
+.copy {
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+}
+.copy p:first-of-type::first-letter {
+  font-size:  3.25em;
+}
+
+.project-title {
+  font-size: 3.25em;
+  color: rgb(86, 178, 228);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*
+~~~
+Multi-coloured buttons
+~~~
+*/
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.light-blue-btn,.medium-blue-btn,.dark-blue-btn,.dark-btn {
+  color: #FFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.light-blue-btn:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 4px solid rgba(44, 146, 204, 0.9);
+}
+.medium-blue-btn:hover {
+  color: #fff;
+  background-color: rgba(86, 178, 228, 0.9);
+}
+.dark-blue-btn:hover {
+  color: #FFF;
+  background: rgba(44, 146, 204, 0.9);
+}
+
+/*---------------------------------------
+ **   BORDER BOTTOMS                 -----
+-----------------------------------------*/
+.blue-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: rgb(59, 104, 128);
+  bottom: -9px;
+  left: 12.5%;
+}
+.grey-border-bottom:before {
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background: rgb(128,128,128);
+  bottom: -9px;
+  left: 12.5%;
+}
+
+/*---------------------------------------
+ **   SECTION SETTINGS              -----
+-----------------------------------------*/
+
+/***
+~~~
+SECTION HEADERS
+~~~
+***/
+.who-we-are, .take-action, .why-spine, .our-partners  {
+  padding-top: 2%;
+}
+.navbar {
+  background-color: rgba(0,0,0,0);
+}
+.section-header {
+  text-align: center;
+  padding: 75px 0;
+  font-family: 'gotham_medium' !important;
+}
+.section-header h2 {
+  padding-bottom: 10px;
+  line-height: 40px;
+  position: relative;
+  display: inline-block;
+}
+.section-header h6 {
+  font-size: 16px;
+}
+.section-lead {
+  padding: 1rem 0 3rem 1.5rem;
+  text-align: right;
+  margin-right: 27%;
+}
+.section-lead h5{
+  text-transform: uppercase;
+}
+/*
+~~~
+OUR PROJECTS
+~~~
+*/
+.our-projects {
+  margin-top: -10px;
+  background-color: rgb(86, 178, 228);
+}
+.feature-projects {
+  margin-bottom: 2rem;
+}
+.project-description {
+  text-align: justify;
+  margin: 3rem 0;
+}
+.project-description a {
+  font-family: 'gotham_bold';
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+~~~
+USER-ACTIONS
+~~~
+*/
+.user-action {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*
+~~~
+USER-ACTIONS
+~~~
+*/
+
+.our-partners {
+  padding-bottom: 2%;
+  background-color: #f1f1f2;
+}
 /*
 ~~~
 Carousel
 ~~~
 */
+
+/*.take-action::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-style: solid;
+  border-width: 1.5em 1.469em 0 1.469em;
+  border-color: rgb(86, 178, 228)  transparent transparent transparent;
+  left: 50%;
+  margin-left: -0.496em;
+}*/
 
 #owl-demo {
   max-height: 450px;
@@ -119,101 +524,54 @@ Carousel
 }
 
 #owl-demo .item img{
-  position: relative;
   top: -45px;
   display: block;
   width: 100%;
 }
 
-#owl-demo .slide-1-content {
+.slide-copy {
   position: absolute;
-  top: 85px;
-  left: 125px;
+  top: 10%;
+  left: 10%;
+  max-width: 40%;
 }
-
-#owl-demo .slide-1-content h1 {
-  color: black;
+.slide-copy h1 {
+  font-family: 'gotham_medium';
 }
-
-#owl-demo .slide-2-content {
-  position: absolute;
-  top: 100px;
-  left: 185px;
-}
-
-#owl-demo .slide-2-content h1 {
-  color: white;
-}
-
-#owl-demo .slide-3-content {
-  position: absolute;
-  top: 100px;
-  right: 95px;
-  color: white;
-}
-
-#owl-demo .slide-3-content h1 {
-  color: white;
-}
-
-#take-action {
-  background-color: #78b7e2;
-}
-
-.user-action {
-	text-align: center;
-}
-
-.btn-lg {
-	margin: 40px 0;
+.right {
+  left: 60%;
 }
 
 .navbar {
 	margin-bottom: 0;
 }
 
+.individual-projects {
+/*  min-height: 560px;*/
+  margin-bottom: 2%;
+}
 .icon-copy {
   font-size: 1.5em;
 }
 
-#our-projects {
-  background-color: #1a6395;
-  padding: 0 0 20px 0px;
-}
-
-#about-us {
-  background-color: #2385c8;
-  padding: 0 0 20px 0px;
-}
-
-#our-partners {
-  background-color: #f1f1f2;
-  padding: 0 0 20px 0px;
-}
 
 .partner-logo {
   height: 50px;
 }
 
-#sponsor-org-box {
+/*.sponsor-org {
   margin: 40px 0;
 }
 
-#sponsor-org-box h5, #prof-assoc-box h5 {
-  color:#2385c8;
+.sponsor-org-box h5, .prof-assoc-box h5 {
   margin-bottom:40px;
-}
+}*/
 
-#prof-assoc-box {
-  margin: 40px 0;
-}
 
 footer {
-	background:#eee;
-  padding-bottom: 55px;
   color: black;
+  display: block;
 }
-
 .site-map li {
 	display: block;
 }
@@ -242,7 +600,7 @@ footer {
 
 
 /* ~~~~
-Common styles for hoverboxes 
+Common styles for hoverboxes
 ~~~~*/
 .hoverbox {
   overflow: hidden;
@@ -250,10 +608,6 @@ Common styles for hoverboxes
   padding: 0;
   list-style: none;
   text-align: center;
-}
-
-.hoverbox h2 {
-  color: rgb(59, 104, 128);
 }
 
 .hoverbox figure {
@@ -274,7 +628,6 @@ Common styles for hoverboxes
 
 .hoverbox figure figcaption {
   padding: 2em;
-  color: #fff;
   text-transform: uppercase;
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
@@ -295,8 +648,14 @@ Common styles for hoverboxes
   height: 100%;
 }
 
+
+.animated {
+  animation-duration: 4s !important;
+  animation-fill-mode: both;
+}
+
 /* ~~~~
-These are the anchors 
+These are the anchors
 ~~~~*/
 .hoverbox figure a {
   z-index: 1000;
@@ -332,8 +691,8 @@ figure.effect-sadie figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(86, 128, 228, 0) 0%, rgba(86, 128, 228, 0.8) 75%);
-  background: linear-gradient(to bottom, rgba(86, 128, 228, 0) 0%, rgba(86, 128, 228, 0.8) 75%);
+  background: -webkit-linear-gradient(top, rgba(86, 178, 228, 0) 0%, rgba(86, 178, 228, 0) 75%);
+  background: linear-gradient(to bottom, rgba(86, 178, 228, 0) 0%, rgba(86, 178, 228, 0.9) 75%);
   content: '';
   opacity: 0;
   -webkit-transform: translate3d(0,50%,0);
@@ -345,7 +704,6 @@ figure.effect-sadie h2 {
   top: 90%;
   left: 0;
   width: 100%;
-  color: #484c61;
   -webkit-transition: -webkit-transform 0.35s, color 0.35s;
   transition: transform 0.35s, color 0.35s;
   -webkit-transform: translate3d(0,-50%,0);
@@ -370,7 +728,7 @@ figure.effect-sadie p {
 }
 
 figure.effect-sadie:hover h2 {
-  color: #fff;
+  color: rgb(59, 104, 128);
   -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
   transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
 }
@@ -400,34 +758,57 @@ Unique Stylings for HOME and ABOUT
 
 
 .team .hoverbox figure {
-  width: 90%;
+  width: 100%;
   height: 400px;
 }
 
 
+/*---------------------------------------
+ **        BACKGROUNDS              -----
+-----------------------------------------*/
 
-/* START PROJECTS PAGE STYLES */
-
-.jumbotron {
-  background-size: cover;
-  height: 400px;
+.project-landing {
+  height: 100%;
+  margin: 0;
 }
-
 .project-jumbo {
   background-image: url(../images/first-team.jpg);
+  background-size: cover;
+  min-height: 300px;
+  width: 103%;
+  float: right;
+  margin: 0;
+}
+.modal-content {
+  background-color: rgba(86, 178, 228, 0.7);
 }
 
 .volunteer-jumbo {
   background-image: url(../images/volunteer-shoshong.jpg);
-
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-attachment: fixed;
 }
 
-.play-btn-box {
-  line-height: 400px;
+.polygon-bg {
+  background-image: url(../images/backgrounds/bluepoly2.jpg);
+  margin-top: 60%;
+  height: 300px;
+  background-position: -300px;
+  background-attachment: fixed;
+}
+span .glyphicon .glyphicon-play-circle {
+  margin: 0 auto;
 }
 
-.modal-play-btn {
-  color: white;
+.abstract-spine {/*
+  background-image: url(../images/abstract-spine.png);
+  background-size: cover;*/
+  height: 1000px;
+  width: 100%;
+  margin-top: -50px;
 }
 
 /* Responsive YouTube Embed Start */
@@ -445,9 +826,25 @@ Unique Stylings for HOME and ABOUT
   width: 100%; height: 100%;
 } /* Responsive YouTube Embed End */
 
-/* Project Page Styles */
+.glyphicon-play-circle {
+  margin: 20% 40%;
+  color: white;
+}
+.glyphicon-play-circle:hover {
+  cursor: pointer;
+}
 
-.dropdown li a {
+/*
+~~~
+Project Page Styles
+~~~
+*/
+
+
+
+
+
+/*.dropdown li a {
   line-height: 35px !important;
   height: 35px !important;
 }
@@ -465,6 +862,74 @@ Unique Stylings for HOME and ABOUT
 .project-summary {
   font-size: 1.25em;
   padding-bottom: 10px;
+}*/
+/*
+~~~
+SUBNAV FOR ABOUT US AND PROJECTS
+~~~
+*/
+.sub-nav {
+  position: fixed;
+  display: block;
+  border-right: 3px solid rgb(86, 178, 228);
+  width: 160px;
+  margin: 0 auto;
+}
+.sub-nav img {
+  display: block;
+  width: 7rem;
+}
+.sub-nav h4 {
+  margin: -0.2rem 0;
+}
+/*.sub-nav .projects {
+  padding-top: 90px;
+}*/
+.sub-nav li {
+  margin: 0rem;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+.main-nav-list li:first-of-type  {
+  margin-top: 1.5rem;
+}
+.sub-nav li:hover{
+  text-decoration: none;
+}
+.sub-nav .projects li {
+  margin: 0 0;
+  padding: 1.5rem 0;
+  text-align: left;
+}
+.current a {
+  color: rgb(44, 146, 204);
+  position: relative;
+  outline: none;
+  text-decoration: none;
+}
+.current span {
+  border-bottom: 3px solid rgb(86, 178, 228);
+}
+.current img {
+  border-bottom: 3px solid rgb(86, 178, 228);
+}
+#main-nav .current a:hover {
+  text-decoration: none !important;
+}
+/*---------------------------------------
+ **   PICTURES                      -----
+-----------------------------------------*/
+
+/*
+~~~
+PROJECT PICS
+~~~
+*/
+
+.img-wrapper {
+  border-radius: 50%;
+  height: 200px;
 }
 
 .botswana-jumbo {
@@ -498,6 +963,8 @@ Unique Stylings for HOME and ABOUT
   margin-right: 20px;
   margin-bottom: 10px;
 }
+
+
 
 /* Social Media Icons */
 
@@ -534,29 +1001,168 @@ Unique Stylings for HOME and ABOUT
 
 /* Resources */
 
-.heading.resources {
-  padding:10px 45px;
-}
-
-.resource-category {
-  margin:40px 0 20px 0;
-  text-align: center;
-}
-
 .model-of-care {
-  color: #000;
-  font-size: 1.2em;
-  padding:0 45px;
-  margin-bottom: 40px;
+
 }
 
-#who-we-are .container {
-  width: 75%;
-  margin: 35px auto;
-}
-
-#who-we-are h3 {
+.who-we-are {
   text-align: center;
-  font-family: 'Gotham-Book';
+  letter-spacing: 0.2rem;
+}
+.who-we-are h3 {
+  font-family: 'gotham_book';
+  margin-top: -1rem;
+}
+
+/*
+~~~
+CONTACT-US FORM
+~~~
+*/
+
+#feedback-page{
+  text-align:center;
+}
+
+#form-main{
+  width:100%;
+  padding-top:0px;
+}
+
+#form-div {
+  background-color:rgba(72,72,72,0.4);
+  padding-left:35px;
+  padding-right:35px;
+  padding-top:35px;
+  padding-bottom:50px;
+  min-width: 450px;
+  max-width: 700px;
+  margin: 30px auto;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+  color:#3c3c3c;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 0;
+  line-height: 22px;
+  background-color: #fbfbfb;
+  padding: 13px 13px 13px 54px;
+  margin-bottom: 10px;
+  width:100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+  background: #fff;
+  box-shadow: 0;
+  border: 3px solid #3498db;
+  color: #3498db;
+  outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+  color:#30aed6;
+  border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#name:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-size: 30px 30px;
+  background-position: 8px 5px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#email:focus{
+  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+#comment{
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color:white;
+}
+
+#button-blue{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  float:left;
+  width: 100%;
+  border: #fbfbfb solid 4px;
+  cursor:pointer;
+  background-color: #3498db;
+  color:white;
+  font-size:24px;
+  padding-top:22px;
+  padding-bottom:22px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+  background-color: rgba(0,0,0,0);
+  color: #0493bd;
+}
+
+.submit:hover {
+  color: #3498db;
+}
+
+.ease {
+  width: 0px;
+  height: 74px;
+  background-color: #fbfbfb;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
 }
 

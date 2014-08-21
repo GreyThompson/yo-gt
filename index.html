@@ -14,8 +14,9 @@
 
   <!-- Carousel -->
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-  <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
   <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <title>WSC</title>
 
@@ -42,9 +43,9 @@
         <div class="collapse navbar-collapse" id="hidden-nav">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="about.html">About</a></li>
+            <li><a href="clinics.html">Clinics</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="resources.html">Resources</a></li>
-            <li><a href="project.html">Projects</a></li>
             <li><a href="volunteer.html">Take Action</a></li> <!-- Style as a button -->
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -54,183 +55,208 @@
   <!-- Navbar End -->
 
   <!-- Carousel Start -->
-     <div id="owl-demo" class="owl-carousel owl-theme">
+     <div id="owl-demo" class="owl-carousel owl-fade-in">
       <div class="item">
         <img src="images/DSC_8821.jpg" alt="">
-        <div class="slide-1-content">
-          <h1 class"slider-copy">Help us out or whatever.</h1>
-          <a class="action-button btn btn-lg btn-primary" href="#">Donate Now</a>
+        <div class="slide-copy dark-text">
+          <h1>Spinal disorders affect society from the ground up</h1>
+          <a class="btn btn-lg light-blue-btn" href="#">Make an Impact</a>
         </div>
       </div>
       <div class="item">
         <img src="images/DSC_8836.jpg" alt="">
-        <div class="slide-2-content">
-          <h1 class"slider-copy">Help us out or whatever.</h1>
-          <a class="action-button btn btn-lg btn-primary" href="#">Donate Now</a>
+        <div class="slide-copy white-text">
+          <h1>Spinal disorders affect society from the ground up</h1>
+          <a class="btn btn-lg light-blue-btn" href="#">Make an Impact</a>
         </div>
       </div>
       <div class="item">
         <img src="images/DSC_8840.jpg" alt="">
-        <div class="slide-3-content">
-          <h1 class"slider-copy">Help us out or whatever.</h1>
-          <a class="action-button btn btn-lg btn-primary" href="#">Donate Now</a>
+        <div class="slide-copy right white-text">
+          <h1>Spinal disorders affect society from the ground up</h1>
+          <a class="btn btn-lg light-blue-btn" href="#">Make an Impact</a>
         </div>
-      </div>
+      </div>      
     </div>
   </div>
   <!-- Carousel End -->
 
   <!-- Who We Are Start -->
-  <section id="who-we-are">
+  <section class="who-we-are light-blue-bg">
     <div class="container">
-      <h3>We're a charity dedicated to helping local communities treat the disease with the greatest economic impact in the developing world: spinal disorders.</h3>
-    </div>
+      <div class="row">
+        <h3>We're a global charity dedicated to helping local communities treat the disease with the greatest economic impact in the developing world: spinal disorders.</h3>
+      </div>  
+    </div>  
   </section>
-
   <!-- Who We Are End -->
 
   <!-- Take Action Start -->
-  <div id="take-action">
+  <section class="take-action light-grey-bg">
     <div class="container">
       <div class="row">
-        <h2 class="text-center">You Can Help</h2>
-        <div class="col-sm-4">
+        <h2 class="text-center"></h2>
+
+        <div class="col-sm-4 text-center">
           <div class="user-action">
             <div class="hoverbox">
               <figure class="effect-sadie">
                 <img src="images/donate-action.jpg" alt="img02"/>
                 <figcaption>
-                  <h2>Donate <span> to WSC</span></h2>
+                  <h2 class="white-text section-header">Donate <span> to WSC</span></h2>
                   <p>World Spine Care is doing some awesome stuff -- you should help</p>
                   <a href="#">View more</a>
                 </figcaption>     
               </figure>
-            </div>
-          </div>       
-          <div class="user-action">
+            </div>      
             <p class="lead">If you wish to donate to help out our cause, signup for an account and create a profile!</p>
-            <button type="button" class="btn btn-primary btn-lg">
+            <a class="btn btn-primary btn-lg">
               <span class="glyphicon glyphicon-usd"></span> Donate
-            </button>
+            </a>
           </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 text-center">
           <div class="user-action">
             <div class="hoverbox">
               <figure class="effect-sadie">
                 <img src="images/volunteer-action.jpg" alt="img02"/>
                 <figcaption>
-                  <h2>Volunteer<span> with WSC</span></h2>
+                  <h2 class="white-text section-header">Volunteer<span> with WSC</span></h2>
                   <p>World Spine Care is doing some awesome stuff -- you should help</p>
                   <a href="#">View more</a>
                 </figcaption>     
               </figure>
             </div>            
             <p class="lead">If you enjoy helping people are looking for volunteer please sign up with us.</p>
-            <button type="button" class="btn btn-primary btn-lg">
+            <a class="btn btn-primary btn-lg">
               <span class="glyphicon glyphicon-heart-empty"></span> Volunteer
-            </button>
+            </a>
           </div>
         </div>
 
-        <div class="col-sm-4">          
+        <div class="col-sm-4 text-center">          
           <div class="user-action">
             <div class="hoverbox">
               <figure class="effect-sadie">
                 <img src="images/subscribe-action.jpg" alt="img02"/>
                 <figcaption>
-                  <h2>Subscribe<span> to WSC</span></h2>
+                  <h2 class="white-text section-header">Subscribe<span> to WSC</span></h2>
                   <p>World Spine Care is doing some awesome stuff -- you should help</p>
                   <a href="#">View more</a>
                 </figcaption>     
               </figure>
             </div>               
             <p class="lead">Subscribe to our newsletter to recieve updates on our projects and upcoming dates to volunteer!</p>
-            <button type="button" class="btn btn-primary btn-lg">
+            <a class="btn btn-primary btn-lg calls">
               <span class="glyphicon glyphicon-pencil"></span> Subscribe
-            </button>
+            </a>
           </div>
         </div>
 
       </div><!-- /.row -->
     </div><!-- /.container -->
-  </div><!-- /#take-action -->
+  </section><!-- /#take-action -->
   <!-- Take Action End -->
 
   <!-- Why Spine Care Start -->
-  <section id="why-spine">
-    <h1>Why Spinal Care? Face it, no one understands this shit.</h1>
-    <p>So we've gotta explain it to peeps and whatnot.</p>
-  </section>
+<!--   <div class="why-spine light-grey-bg">
+    <div class="container">
+      <div class="row">
+        <h1></h1>
+        <p>So we've gotta explain it to peeps and whatnot.</p>
+      </div>
+    </div>
+  </div> -->
   <!-- Why Spine Care End -->
 
   <!-- Our Projects Start -->
-  <div id="our-projects">
+    <svg id="curveUpColor" class="light-grey-bg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 100 C 20 0 50 0 100 100 Z"/>
+    </svg>  
+  <section class="our-projects dark-text">
     <div class="container">
+      <div class="row feature-projects">
+        <h2 class="text-center"></h2>
+
+        <div class="col-sm-4 text-center individual-projects">
+          <h4 class="icon-copy">Yoga-Project <br></h4>          
+            <img class="img-responsive center-block img-wrapper" src="images/project-pics/yoga-project.jpg" />
+          <p class="project-description">
+            Yoga has been found to be effective in the prevention and management of spinal and musculoskeletal disorders. World Spine Care has launched the WSC Yoga project to use yoga as a means of addressing these crippling disorders in underserved regions around the world. This project will be implemented in association with the existing World Spine Care clinics as part of the overall clinical program to address spinal disorders. &nbsp<a class="dark-blue"> Learn More &rarr;</a>
+          </p>
+        </div>
+
+        <div class="col-sm-4 text-center individual-projects">
+          <h4 class="icon-copy">Shoshong Project, <br>Botswana</h4>          
+            <img class="img-responsive center-block img-wrapper" src="images/project-pics/botswana/shoshong1.jpg" />
+          <p class="project-description">
+            To spearhead the development of a greatly increased ability to care for spinal disorders in the developing world, WSC has launched a pilot project in the rural village of Shoshong, Botswana. &nbsp<a class="dark-blue"> Learn More &rarr;</a>
+          </p>
+        </div>
+
+        <div class="col-sm-4 text-center individual-projects">
+          <h4 class="icon-copy">Rathambhore Project, <br>India</h4>          
+          <img class="img-responsive center-block img-wrapper" src="images/project-pics/india/rathambhore.jpg" />
+          <p class="project-description">
+            In December 2010, during a visit to the Ranthambhore area Dr. Scott Haldeman, President of World Spine Care, met Dr. Governhan Singh Rathore, Executive Director of the Prakratik Society which operates the Sevika Hospital in this area of India. It is the only hospital serving a population of nearly 250,000 inhabitants covering 96 villages along the Ranthambhore National Park in the State of Rajasthan, India. &nbsp<a class="dark-blue"> Learn More &rarr;</a>
+          </p>
+        </div>
+      </div>
       <div class="row">
-        <h2 class="text-center">Our Projects</h2>
-
-        <div class="col-sm-3">
-          <img class="img-responsive center-block" src="http://placehold.it/300.png/09f/fff" />
-          <p class="icon-copy text-center">Botswana</p>
+        <div class="col-sm-4 text-center individual-projects">
+          <h4 class="icon-copy">Moca Project, <br>Dominican Republic</h4>          
+          <img class="img-responsive center-block img-wrapper" src="images/project-pics/dominican/moca-hospital.jpg"/>
+          <p class="project-description">
+            WSC is currently working on the development of a project in the town of Moca in the Dominican Republic. The Project aims to: Perform an epidemiological study to determine the impact of Spinal Disorders in designated rural or underserved communities; Identify health care resources in rural and underserved communities, which could be considered in the establishment of an evidence-based Spine care program. &nbsp<a class="dark-blue"> Learn More &rarr;</a>            
+          </p>
         </div>
 
-        <div class="col-sm-3">
-          <img class="img-responsive center-block" src="http://placehold.it/300.png/09f/fff" />
-          <p class="icon-copy text-center">India</p>
+        <div class="col-sm-4 text-center individual-projects">
+          <h4 class="icon-copy">Magu Project, <br> Tanzania</h4>          
+          <img class="img-responsive center-block img-wrapper" src="images/project-pics/tanzania/tanzania1.jpg" />
+          <p class="project-description">
+            WSC is currently working on the development of a project in the Magu region of Tanzania.  The project is a collaboration between the Tanzania Home Economics Association (TAHEA), the Global Peace Network Canada (GPN), the Magu District health Council and World Spine Care.  Dr. Brian Budgell has taken the lead in the development of the project which will be ready to open in the second half of 2014.&nbsp<a class="dark-blue"> Learn More &rarr;</a>
+          </p>
         </div>
-
-        <div class="col-sm-3">
-          <img class="img-responsive center-block" src="http://placehold.it/300.png/09f/fff" />
-          <p class="icon-copy text-center">Dominican Republic</p>
-        </div>
-
-        <div class="col-sm-3">
-          <img class="img-responsive center-block" src="http://placehold.it/300.png/09f/fff" />
-          <p class="icon-copy text-center">Tanzania</p>
-        </div>
+        <div class="col-sm-4 text-center individual-projects">
+          <h4 class="icon-copy">Spine Care Donor Program, <br>Dominican Republic</h4>          
+          <img class="img-responsive center-block img-wrapper" src="images/project-pics/tanzania/tanzania2.jpg"/>
+          <p class="project-description">
+            WSC is currently working on the development of a project in the town of Moca in the Dominican Republic. The Project aims to: Perform an epidemiological study to determine the impact of Spinal Disorders in designated rural or underserved communities; Identify health care resources in rural and underserved communities, which could be considered in the establishment of an evidence-based Spine care program. &nbsp<a class="dark-blue"> Learn More &rarr;</a>            
+          </p>
+        </div>        
       </div><!-- /.row -->
     </div><!-- /.container -->
   </div><!-- /#our-projects -->
+</section>
   <!-- Our Projects End -->
 
   <!-- About Us Start -->
-  <div id="about-us">
-    <div class="container">
-      <div class="row">
-        <h2 class="text-center">About Us</h2>
-
-        <div class="col-sm-3">
-          <img class="img-responsive center-block"src="http://placehold.it/300.png/09f/fff">
-          <p class="icon-copy text-center">Our Mission</p>
-        </div>
-        <div class="col-sm-3">
-          <img class="img-responsive center-block"src="http://placehold.it/300.png/09f/fff">
-          <p class="icon-copy text-center">Our History</p>
-        </div>
-        <div class="col-sm-3">
-          <img class="img-responsive center-block"src="http://placehold.it/300.png/09f/fff">
-          <p class="icon-copy text-center">Our Team</p>
-        </div>
-        <div class="col-sm-3">
-          <img class="img-responsive center-block"src="http://placehold.it/300.png/09f/fff">
-          <p class="icon-copy text-center">Contact Us</p>
-        </div>
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-  </div><!-- /.container-fluid -->
+          <div class="separator elon-separator">  
+            <div class="overlay">  
+              <h6>"World Spine Care is initiating a program that should facilitate a transformational change in the understanding of Spine Care" <br>-- <i>Elon Musk</i></h6>
+            </div>              
+          </div>     
   <!-- About Us End -->
+  <section class="about-us">
+          <div class="about-links">
+              <img class="img-responsive about-icons" src="images/globe1.png">
+              <h4 class="icon-copy text-right">Our Mission</p>
+              <img class="img-responsive about-icons" src="images/globe2.png">
+              <h4 class="icon-copy text-right">Our History</p>
+              <img class="img-responsive about-icons" src="images/heart1.png">
+              <h4 class="icon-copy text-right">Our Team</p>
+              <img class="img-responsive about-icons" src="images/heart2.png">
+              <h4 class="icon-copy text-right">Contact Us</p>
+          </div>  
+  </section>
 
   <!-- Our Partners Start -->
-  <div id="our-partners">
+  <div class="our-partners white-bg">
     <div class="container">
       <div class="row">
-        <h2 class="text-center heading">Our Partners</h2>
-      </div><!-- /.row -->
-      <div class="row">
-        <div class="container" id="sponsor-org-box">
-
+        <h2 class="text-center">Our Partners</h2>
           <div class="col-md-2 col-sm-4 col-xs-6">
             <img class="img-responsive center-block partner-logo" src="images/partner-logos/skoll-foundation.png">
           </div>
@@ -249,12 +275,34 @@
           <div class="col-md-2 col-sm-4 col-xs-6">
             <img class="img-responsive center-block partner-logo" src="images/partner-logos/elite120.png">
           </div>
-        </div><!-- /.container -->
       </div><!-- /.row -->
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="container" id="prof-assoc-box">
-
-
+        <h2 class="text-center section-header">Collaborating Institutions</h2>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive center-block partner-logo" src="images/partner-logos/usf.png">
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive center-block partner-logo" src="images/partner-logos/schoolofphys.png">
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive center-block partner-logo" src="images/partner-logos/usd.png">
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive center-block partner-logo" src="images/partner-logos/cmcc120.png">
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive center-block partner-logo" src="images/partner-logos/palmer120.png">
+          </div>
+          <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive center-block partner-logo" src="images/partner-logos/jab.png">
+          </div>
+      </div><!-- /.row -->
+    </div>
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center section-header">Endorsing Professional Institutions</h2>
           <div class="col-md-2 col-sm-4 col-xs-6">
             <img class="img-responsive center-block partner-logo" src="images/partner-logos/boneandjoint120.png">
           </div>
@@ -271,16 +319,15 @@
             <img class="img-responsive center-block partner-logo" src="images/partner-logos/wfc120.png">
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6">
-            <img class="img-responsive center-block partner-logo" src="images/partner-logos/sass12.png">
+            <img class="img-responsive center-block partner-logo" src="images/partner-logos/sass120.png">
           </div>
-        </div><!-- /.container -->
       </div><!-- /.row -->
+    </div>    
     </div><!-- /.container -->
-  </div><!-- /#our-partners -->
   <!-- Our Partners End -->
 
  <!-- Footer Start -->
-  <footer>
+  <footer class="light-grey-bg">
     <div class="container-fluid">
       <div class="container">
         <div class="row">
@@ -318,11 +365,33 @@
   <!-- Footer End -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
+  
+
+  <!--~~~FIX ME!!!  -->
+<script>  
+$(document).ready(function() {
+
+      var owl = $("#owl-demo");
+
+    owl.owlCarousel({
+      navigation : false, // Show next and prev buttons
+      singleItem: true,
+      autoPlay: 3000, 
+      transitionStyle:"fade",
+      lazyEffect : "fade",      
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+
+}); </script>  
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
   <script src="js/owl.carousel.js"></script>
-  <script src="js/carousel.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
 </body>
 </html>

@@ -8,20 +8,22 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/home.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
 
-    <!-- Font Awesome -->
+  <!-- Font Awesome -->
   <link href="css/font-awesome.css" rel="stylesheet">
-  
-  <!-- Additional Styles -->
-  <link href="css/gt-styles.css" rel="stylesheet"> <!-- for responsive video embed -->
-  
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <link href="css/responsive.css">
 
-  <title>Volunteer | World Spine Care</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
 </head>
 <body>
 
-  <!-- Navbar Start -->
-  <header>
+ <!-- Navbar Start -->
+  <header id="home" class="header">
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,37 +40,49 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="hidden-nav">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">About</a></li>
+            <li><a href="about.html">About</a></li>
+<!--             <li class="dropdown">
+              <a href="project.html" class="dropdown-toggle" data-toggle="dropdown">Projects</span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Botswana</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">Dominican Republic</a></li>
+                <li><a href="#">Tanzania</a></li>
+              </ul>
+            </li> -->
+            <li><a href="clinics.html">Clinics</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="project.html">Projects</a></li>
+            <li><a href="#">Resources</a></li>
             <li><a href="volunteer.html">Take Action</a></li> <!-- Style as a button -->
           </ul>
-        </div><!-- /.navbar-collapse -->
+        </div><!--  /.navbar-collapse -->
+
       </div><!-- /.container-fluid -->
+    </div>    
     </nav>
   </header>
-  <!-- Navbar End -->
 
   <!-- Project Header & Video Jumbotron Start -->
-  <section class="container">
-    <h1 class="text-center">THIS IS A VOLUNTEER PAGE</h1>
-    <div class="jumbotron volunteer-jumbo">
-      <div class="container">
-        <div class="row">
-          <p class="play-btn-box text-center"><a data-toggle="modal" data-target="#videoModal" class="modal-play-btn"><span class="glyphicon glyphicon-play-circle" style="font-size: 106px"></span></a></p>
+    <div class="volunteer-jumbo">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+              <p class="play-btn-box text-center"><a data-toggle="modal" data-target="#videoModal" class="animated infinite pulse"><span class="glyphicon glyphicon-play-circle" style="font-size: 106px"></span></a></p>
           </div>
         </div>
       </div>
-  </section>
+    </div>
   <!-- Project Header & Video Jumbotron End -->
 
   <!-- Random Text Blob Start -->
   <section class="container">
-    <p class="volunteer-description text-justify">Butcher consequat occupy polaroid Neutra, distillery gluten-free locavore Wes Anderson tattooed dolor roof party. Tote bag vegan sapiente, kitsch tattooed flannel bespoke odio eu ea. Bitters forage 8-bit aliqua ea freegan. Etsy assumenda cred vegan DIY dreamcatcher. Lomo minim paleo, consequat adipisicing keffiyeh Pitchfork pork belly fashion axe Thundercats tousled sunt High Life letterpress. Portland YOLO viral, dolore accusamus Carles assumenda dolor seitan pop-up polaroid Schlitz semiotics. 8-bit accusamus whatever Helvetica XOXO, sartorial cupidatat biodiesel master cleanse enim velit mumblecore.</p>
+    <p>Butcher consequat occupy polaroid Neutra, distillery gluten-free locavore Wes Anderson tattooed dolor roof party. Tote bag vegan sapiente, kitsch tattooed flannel bespoke odio eu ea. Bitters forage 8-bit aliqua ea freegan. Etsy assumenda cred vegan DIY dreamcatcher. Lomo minim paleo, consequat adipisicing keffiyeh Pitchfork pork belly fashion axe Thundercats tousled sunt High Life letterpress. Portland YOLO viral, dolore accusamus Carles assumenda dolor seitan pop-up polaroid Schlitz semiotics. 8-bit accusamus whatever Helvetica XOXO, sartorial cupidatat biodiesel master cleanse enim velit mumblecore.</p>
 
-    <button data-toggle="modal" data-target="#volunteerModal" data-dismiss="modal" class="btn btn-success btn-lg btn-block">I want to help!</button>
+    <button data-toggle="modal" data-target="#volunteerModal" data-dismiss="modal" class="btn btn-success btn-sm btn-block">I want to help!</button>
   </section>
+<div class="triangle-separator">
+
+</div>  
 
 <!-- Footer Start -->
   <footer>

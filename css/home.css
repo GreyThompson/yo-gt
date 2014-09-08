@@ -64,7 +64,7 @@ p, li, a {
  **   COLORS                         -----
 -----------------------------------------*/
 
-/** 
+/**
 ~~~
 For Text and Font-Icons
 ~~~
@@ -73,7 +73,7 @@ For Text and Font-Icons
   color: rgba(86, 178, 228, 0.9);
 }
 .medium-blue {
-  color: rgba(44, 146, 204, 0.9); 
+  color: rgba(44, 146, 204, 0.9);
 }
 .dark-blue {
   color: rgba(59, 104, 128, 0.9);
@@ -123,21 +123,23 @@ a:hover {
 }
 .navbar-nav li a:hover {
   color: rgb(44, 146, 204);  
+  padding-top: 0;
+  color: rgb(44, 146, 204);
 }
 .navbar-logo{
   margin: -10px 15px;
 }
 
-/** 
+/**
 ~~~~
-BACKGROUNDS 
+BACKGROUNDS
 ~~~
 **/
 .light-blue-bg {
   background-color: rgba(86, 178, 228, 0.9);
 }
 .medium-blue-bg {
-  background-color: rgba(44, 146, 204, 0.9);  
+  background-color: rgba(44, 146, 204, 0.9);
 }
 .dark-blue-bg {
   background-color: rgba(59, 104, 128, 0.9);
@@ -151,9 +153,9 @@ BACKGROUNDS
 .white-bg {
   background-color: #fff;
 }
-/** 
+/**
 ~~~~
-SEPARATORS 
+SEPARATORS
 ~~~
 **/
 
@@ -174,7 +176,7 @@ SEPARATORS
   position: relative;
   padding: 10em 10%;
   color: #fff;
-  text-align: center;  
+  text-align: center;
   padding-top: 7em;
   border-radius: 0 0 80px 80px;
 }
@@ -245,26 +247,26 @@ SEPARATORS
   margin-top: -10px;
   background-size: 100%;
   top: -50px;
-  background-attachment: fixed;  
+  background-attachment: fixed;
 }
 /*.poly-separator-two {
   background-image: url(../images/backgrounds/bluepoly2.jpg);
-  background: url('../images/backgrounds/bluepoly2.jpg');  
+  background: url('../images/backgrounds/bluepoly2.jpg');
   height: 400px;
   width: 100%;
   margin-top: -10px;
   top: -50px;
-  background-attachment: fixed;  
+  background-attachment: fixed;
 }*/
 .triangle-separator {
   background-image: url(../images/backgrounds/bluetriangles.jpg);
-  background: url('../images/backgrounds/bluetriangles.jpg');  
+  background: url('../images/backgrounds/bluetriangles.jpg');
   height: 400px;
   width: 100%;
   margin-top: -10px;
   top: -50px;
   background-size: cover;
-  background-attachment: fixed;    
+  background-attachment: fixed;
 }
 .blueprint {
   background: url('../images/backgrounds/blueprint-small.gif') repeat;
@@ -293,7 +295,7 @@ SEPARATORS
   color: white;
   font-family: 'gotham_book';
   font-weight: 100;
-  line-height: 5rem;  
+  line-height: 5rem;
   letter-spacing: 0.7rem;
   word-spacing: 1rem;
   font-size: 3rem;
@@ -358,7 +360,14 @@ TEXT-DEFAULTS
   line-height: 2.5rem;
 }
 .copy p:first-of-type::first-letter {
-  font-size:  3.25em
+  font-size:  3.25em;
+}
+
+.project-title {
+  font-size: 3.25em;
+  color: rgb(86, 178, 228);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*
@@ -369,7 +378,7 @@ Multi-coloured buttons
 
 .col-centered {
   float: none;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .light-blue-btn,.medium-blue-btn,.dark-blue-btn,.dark-btn {
@@ -421,12 +430,16 @@ Multi-coloured buttons
  **   SECTION SETTINGS              -----
 -----------------------------------------*/
 
-/*** 
+/***
 ~~~
-SECTION HEADERS 
+SECTION HEADERS
 ~~~
 ***/
 .who-we-are, .take-action, .why-spine, .our-partners  {
+<<<<<<< HEAD
+=======
+  padding-top: 2%;
+>>>>>>> 695aa3ec87cbfca7a54f06da065aa58b6a7bb3dc
 }
 .navbar {
   background-color: rgba(0,0,0,0);
@@ -549,7 +562,7 @@ Carousel
   font-family: 'gotham_medium';
 }
 .right {
-  left: 60%;  
+  left: 60%;
 }
 
 .navbar {
@@ -610,7 +623,7 @@ footer {
 
 
 /* ~~~~
-Common styles for hoverboxes 
+Common styles for hoverboxes
 ~~~~*/
 .hoverbox {
   overflow: hidden;
@@ -665,7 +678,7 @@ Common styles for hoverboxes
 }
 
 /* ~~~~
-These are the anchors 
+These are the anchors
 ~~~~*/
 .hoverbox figure a {
   z-index: 1000;
@@ -818,7 +831,7 @@ Unique Stylings for HOME and ABOUT
   background-image: url(../images/first-team.jpg);
   background-size: cover;
   min-height: 300px;
-  width: 87%;
+  width: 103%;
   float: right;
   margin: 0;
 }
@@ -889,9 +902,9 @@ span .glyphicon .glyphicon-play-circle {
   -moz-animation-iteration-count: infinite;
 }
 
-/* 
+/*
 ~~~
-Project Page Styles 
+Project Page Styles
 ~~~
 */
 
@@ -941,9 +954,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
   padding-top: 90px;
 }*/
 .sub-nav li {
-  margin: 0rem; 
+  margin: 0rem;
   text-decoration: none;
-  list-style: none;  
+  list-style: none;
   text-align: center;
 }
 .main-nav-list li:first-of-type  {
@@ -1202,11 +1215,11 @@ input:focus, textarea:focus {
   background-color: rgba(0,0,0,0);
   color: #0493bd;
 }
-  
+
 .submit:hover {
   color: #3498db;
 }
-  
+
 .ease {
   width: 0px;
   height: 74px;

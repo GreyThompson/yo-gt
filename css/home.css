@@ -1,6 +1,7 @@
 
 body {
   color: black;
+
 }
 
 /*---------------*/
@@ -104,21 +105,23 @@ a {
 a:hover {
   text-decoration: none;
 }
-.navbar-fixed-top {
-  background-color: #fff;
-  height: 80px;
-}
 
 .navbar-brand,
 .navbar-nav li a {
   font-size: 1em;
   padding: 0;
-  margin: 2em;
+  margin: 1em;
   line-height: 1.2em;
+  color: white;
 }
-
+.navbar-default {
+  border: none !important;
+  background-color: rgba(0,0,0,0.3) !important;
+}
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
 .navbar-nav li a:hover {
-  padding-top: 0;
   color: rgb(44, 146, 204);  
 }
 .navbar-logo{
@@ -424,7 +427,6 @@ SECTION HEADERS
 ~~~
 ***/
 .who-we-are, .take-action, .why-spine, .our-partners  {
-  padding-top: 2%; 
 }
 .navbar {
   background-color: rgba(0,0,0,0);
@@ -475,9 +477,24 @@ OUR PROJECTS
 
 /*
 ~~~
-USER-ACTIONS
+Take-ACTION
 ~~~
 */
+.take-action {
+  position: relative;
+  border-top: 10px solid rgba(216,216,216,0.9);
+}
+.take-action::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 1.5em 1.469em 0 1.469em;
+  border-color: rgba(0,0,0,0) transparent transparent transparent;
+  left: 50%;
+  margin-left: -0.496em;
+}
 .user-action {
   min-width: 100%;
   min-height: 100%;
@@ -759,10 +776,43 @@ Unique Stylings for HOME and ABOUT
 /*---------------------------------------
  **        BACKGROUNDS              -----
 -----------------------------------------*/
-
-.project-landing {
+.landing{
   height: 100%;
-  margin: 0;
+  position: absolute;
+  background: url(images/backgrounds/desmond-tutu.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(../images/backgrounds/desmond-tutu.jpg);
+  width:100%;
+  top: 0;
+  background-position: 0 0;
+  background-color:rgba(0,0,0,0.5);
+}
+.landing-container {
+  position: relative;
+  min-height: 700px;
+  width: 100%;
+}
+.landing-statement {
+  color: white;
+  font-family: 'gotham_book';
+}
+/*.landing .hero-overlay {
+    position: absolute;
+    width: 100%;
+    top:0;
+    max-width: none;
+    height: 100%;
+    background-color:rgba(0,0,0,0.3);
+  }
+*/.text-overlay{
+  position: relative;
+  color:white;
+  font-size:30px;
+  text-align:center;
+  margin-top:25%;
 }
 .project-jumbo {
   background-image: url(../images/first-team.jpg);
@@ -826,6 +876,18 @@ span .glyphicon .glyphicon-play-circle {
 .glyphicon-play-circle:hover {
   cursor: pointer;
 }
+#playButton {
+  cursor: pointer;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-iteration-count: infinite;
+}
 
 /* 
 ~~~
@@ -886,6 +948,9 @@ SUBNAV FOR ABOUT US AND PROJECTS
 }
 .main-nav-list li:first-of-type  {
   margin-top: 1.5rem;
+}
+.past-main {
+  background: rgba(26, 26, 26, 0.9);
 }
 .sub-nav li:hover{
   text-decoration: none;
@@ -1004,7 +1069,6 @@ PROJECT PICS
 }
 .who-we-are h3 {
   font-family: 'gotham_book';
-  margin-top: -1rem;
 }
 
 /*

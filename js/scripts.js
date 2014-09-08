@@ -27,3 +27,23 @@ $(document).ready(function() {
   
 });
 
+/*=================================
+===  DARKEN NAV                ====
+=================================== */
+
+
+
+var mainbottom = $('#main-nav').offset().top + $('#main-nav').height();
+
+// // on scroll, 
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    stop = Math.round($(window).scrollTop());
+    if (stop > mainbottom) {
+        $('.navbar').addClass('past-main');
+    } else {
+        $('.navbar').removeClass('past-main');
+    }
+
+});

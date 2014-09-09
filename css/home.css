@@ -286,15 +286,15 @@ SEPARATORS
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(86, 178, 228, 0.3);
+  background-color: rgba(86, 178, 228, 0.6);
 }
 
 .overlay h3 {
   color: white;
   font-family: 'gotham_book';
-  padding: 2rem 0 0 0;
+  padding: 1rem 0 0 0;
   font-weight: 100;
-  line-height: 4rem;
+  line-height: 3rem;
   letter-spacing: 0.2rem;
   word-spacing: 1rem;
 }
@@ -803,7 +803,7 @@ Unique Stylings for HOME and ABOUT
 }
 .landing-container {
   position: relative;
-  min-height: 700px;
+  min-height: 600px;
   width: 100%;
 }
 .landing-statement {
@@ -897,7 +897,8 @@ span .glyphicon .glyphicon-play-circle {
 }
 #playButton {
   cursor: pointer;
-  width: 200px;
+  height: 200px;
+  margin-top: 200px;
   display: inline-block;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 1.5s;

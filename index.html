@@ -11,6 +11,7 @@
   <link href="css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/animate.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" media="all and (max-width: 600px)" href="css/responsive.css" />
   <title>WSC</title>
 
 </head>
@@ -20,8 +21,8 @@
     <div class="landing">
       <!-- Navbar Start -->
       <header>
-        <nav class="navbar navbar-default" role="navigation">
-          <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container-fluid overlay">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hidden-nav">
@@ -49,12 +50,16 @@
       <!-- Navbar End -->
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-sm-offset-6 landing-statement">
-             <h2>I support the goal of <strong>World Spine Care</strong> to enable effective spine care, one village at a time, for the hundreds of millions of people around the world who suffer from spinal problems and have no access to treatment.<br></br>-<i>Archbishop Emeritus Desmond Tutu</i></h2>
+            <div class="col-sm-12">
+              <div class="col-sm-1 col-sm-offset-4">
+                <img id="playButton" class="animated infinite pulse" src="images/play-button.png"/>
+              </div>
+              <div class="col-sm-6 col-sm-offset-1 landing-statement overlay">
+              <a data-toggle="modal" data-target="#videoModal">
+                   <h3>I support the goal of <strong>World Spine Care</strong> to enable effective spine care, one village at a time, for the hundreds of millions of people around the world who suffer from spinal problems and have no access to treatment.<br></br>-<i>Archbishop Emeritus Desmond Tutu</i></h3>
+              </div>
             </div>
-                  <a data-toggle="modal" data-target="#videoModal">
-                      <img id="playButton" class="animated infinite pulse" src="images/play-button.png"/>
-                  </a>
+          </a>
           </div>
         </div>
     </div>
@@ -202,10 +207,16 @@
   <!-- Our Projects End -->
 
   <!-- About Us Start -->
-          <div class="separator elon-separator">  
+          <div class="separator elon-separator">
             <div class="overlay">  
-              <h6>"World Spine Care is initiating a program that should facilitate a transformational change in the understanding of Spine Care" <br>-- <i>Elon Musk</i></h6>
-            </div>              
+              <div class="container">  
+                <div class="row">
+                  <div class="col-sm-12 col-md-8 col-lg-6">
+                  <h3>"World Spine Care is initiating a program that should facilitate a transformational change in the understanding of Spine Care" <br>-- <i>Elon Musk</i></h3>
+                  </div>
+                </div>
+              </div>  
+            </div>            
           </div>     
   <!-- About Us End -->
   <section class="about-us">

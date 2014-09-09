@@ -1,5 +1,2 @@
-@media (min-width: 200px) and (max-width: 986px) {
-.project-jumbo {
-	width: 100% !important;
-}
-}
+@media all and (max-width: 425px){
+	.overlay h6

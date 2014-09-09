@@ -434,10 +434,7 @@ SECTION HEADERS
 ~~~
 ***/
 .who-we-are, .take-action, .why-spine, .our-partners  {
-<<<<<<< HEAD
-=======
   padding-top: 2%;
->>>>>>> 695aa3ec87cbfca7a54f06da065aa58b6a7bb3dc
 }
 .navbar {
   background-color: rgba(0,0,0,0);
